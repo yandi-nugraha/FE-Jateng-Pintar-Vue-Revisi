@@ -9,7 +9,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto ml-auto mt-2 nav-item-list" id="nav">
-                    <li class="nav-item" :class="$route.name == 'home'? 'active':''">
+                    <li class="nav-item"
+                        :class="($route.name == 'home') || ($route.name == 'list-sumber-belajar') || ($route.name == 'sumber-belajar') || ($route.name == 'detail-sumber-belajar')? 'active':''">
                         <router-link to="/" class="nav-link nav-teks px-4">Beranda</router-link>
                     </li>
                     <li class="nav-item" :class="$route.name == 'acara'? 'active':''">
@@ -28,6 +29,7 @@
         </div>
     </nav>
     <router-view />
+
 </template>
 
 <script>
@@ -44,11 +46,14 @@
 
     import navbarLogo from "./assets/NavbarLogo.svg"
     import signInBtn from "./assets/SignIn.svg"
+    import footer from "./assets/Footer.svg"
+
     export default {
         data: function () {
             return {
                 navbarLogo: navbarLogo,
-                signInBtn: signInBtn
+                signInBtn: signInBtn,
+                footer: footer
             }
         }
     }
@@ -121,6 +126,5 @@
 
     .navbar-top-scrolled {
         background: linear-gradient(135deg, #400085 0%, #35006A 100%);
-
     }
 </style>
