@@ -1,4 +1,5 @@
 <template>
+    <div class="background-list-sumber-belajar">
     <div class="container">
         <nav class="navbar navbar-expand-lg filter mt-5 mb-5">
             <div class="container-fluid mx-2">
@@ -99,376 +100,262 @@
                 </div>
             </div>
         </nav>
-        <div class="row pb-5 mb-4">
+        <div class="row">
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
                 <!-- Card-->
                 <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" alt="" class="img-fluid d-block mb-3 img-top-radius">
+                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
                     <div class="card-body">
-                        <h5>Mari Belajar Membaca</h5>
-                        <div class="table-responsive">
-                            <table class="table table-borderless">
-                                <tr>
-                                    <th class="px-0">Kontributor</th>
-                                    <td class="px-0">: Wisma Nantha</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Mapel</th>
-                                    <td class="px-0">: Bahasa Inggris</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Kelas</th>
-                                    <td class="px-0">: 4 Minggu</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tgl Upload</th>
-                                    <td class="px-0">: 17-11-2022 10:33:55</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tipe File</th>
-                                    <td class="px-0">: html | HTML5</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Jenis Media</th>
-                                    <td class="px-0">: Video Pembelajaran</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tag</th>
-                                    <td class="px-0">: -</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Penilaian</th>
-                                    <td class="px-0">
-                                        <ul class="list-inline small">
-                                            <li class="list-inline-item m-0">: </li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
+                        <p class="card-desc">Bahasa Inggris</p>
+                        <h5 class="card-title">Mari Belajar Membaca</h5>
+                        <div class="d-flex align-items-center ms-2">
+                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                         </div>
-                        <hr class="solid">
-                        <router-link to="/detail-sumber-belajar" class="mr-2 mb-3 btn-edit text-light">
-                            <div class="btn-detail">
-                                <span class="btn-detail-teks">Lihat Sumber Belajar</span>
-                                <img src="../assets/arrow-up-right.svg" alt="">
+                        <hr class="inner-card-line">
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <div>
+                                <img src="../assets/profile.svg"
+                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
                             </div>
-                        </router-link>
-                    </div>
+                            <div class="name ms-3">
+                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
                 <!-- Card-->
                 <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" alt="" class="img-fluid d-block mb-3 img-top-radius">
+                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
                     <div class="card-body">
-                        <h5>Mari Belajar Membaca</h5>
-                        <div class="table-responsive">
-                            <table class="table table-borderless">
-                                <tr>
-                                    <th class="px-0">Kontributor</th>
-                                    <td class="px-0">: Wisma Nantha</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Mapel</th>
-                                    <td class="px-0">: Bahasa Inggris</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Kelas</th>
-                                    <td class="px-0">: 4 Minggu</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tgl Upload</th>
-                                    <td class="px-0">: 17-11-2022 10:33:55</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tipe File</th>
-                                    <td class="px-0">: html | HTML5</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Jenis Media</th>
-                                    <td class="px-0">: Video Pembelajaran</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tag</th>
-                                    <td class="px-0">: -</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Penilaian</th>
-                                    <td class="px-0">
-                                        <ul class="list-inline small">
-                                            <li class="list-inline-item m-0">: </li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
+                        <p class="card-desc">Bahasa Inggris</p>
+                        <h5 class="card-title">Mari Belajar Membaca</h5>
+                        <div class="d-flex align-items-center ms-2">
+                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                         </div>
-                        <hr class="solid">
-                        <router-link to="/detail-sumber-belajar" class="mr-2 mb-3 btn-edit text-light">
-                            <div class="btn-detail">
-                                <span class="btn-detail-teks">Lihat Sumber Belajar</span>
-                                <img src="../assets/arrow-up-right.svg" alt="">
+                        <hr class="inner-card-line">
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <div>
+                                <img src="../assets/profile.svg"
+                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
                             </div>
-                        </router-link>
-                    </div>
+                            <div class="name ms-3">
+                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
                 <!-- Card-->
                 <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" alt="" class="img-fluid d-block mb-3 img-top-radius">
+                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
                     <div class="card-body">
-                        <h5>Mari Belajar Membaca</h5>
-                        <div class="table-responsive">
-                            <table class="table table-borderless">
-                                <tr>
-                                    <th class="px-0">Kontributor</th>
-                                    <td class="px-0">: Wisma Nantha</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Mapel</th>
-                                    <td class="px-0">: Bahasa Inggris</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Kelas</th>
-                                    <td class="px-0">: 4 Minggu</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tgl Upload</th>
-                                    <td class="px-0">: 17-11-2022 10:33:55</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tipe File</th>
-                                    <td class="px-0">: html | HTML5</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Jenis Media</th>
-                                    <td class="px-0">: Video Pembelajaran</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tag</th>
-                                    <td class="px-0">: -</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Penilaian</th>
-                                    <td class="px-0">
-                                        <ul class="list-inline small">
-                                            <li class="list-inline-item m-0">: </li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
+                        <p class="card-desc">Bahasa Inggris</p>
+                        <h5 class="card-title">Mari Belajar Membaca</h5>
+                        <div class="d-flex align-items-center ms-2">
+                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                         </div>
-                        <hr class="solid">
-                        <router-link to="/detail-sumber-belajar" class="mr-2 mb-3 btn-edit text-light">
-                            <div class="btn-detail">
-                                <span class="btn-detail-teks">Lihat Sumber Belajar</span>
-                                <img src="../assets/arrow-up-right.svg" alt="">
+                        <hr class="inner-card-line">
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <div>
+                                <img src="../assets/profile.svg"
+                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
                             </div>
-                        </router-link>
-                    </div>
+                            <div class="name ms-3">
+                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
                 <!-- Card-->
                 <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" alt="" class="img-fluid d-block mb-3 img-top-radius">
+                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
                     <div class="card-body">
-                        <h5>Mari Belajar Membaca</h5>
-                        <div class="table-responsive">
-                            <table class="table table-borderless">
-                                <tr>
-                                    <th class="px-0">Kontributor</th>
-                                    <td class="px-0">: Wisma Nantha</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Mapel</th>
-                                    <td class="px-0">: Bahasa Inggris</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Kelas</th>
-                                    <td class="px-0">: 4 Minggu</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tgl Upload</th>
-                                    <td class="px-0">: 17-11-2022 10:33:55</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tipe File</th>
-                                    <td class="px-0">: html | HTML5</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Jenis Media</th>
-                                    <td class="px-0">: Video Pembelajaran</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tag</th>
-                                    <td class="px-0">: -</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Penilaian</th>
-                                    <td class="px-0">
-                                        <ul class="list-inline small">
-                                            <li class="list-inline-item m-0">: </li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
+                        <p class="card-desc">Bahasa Inggris</p>
+                        <h5 class="card-title">Mari Belajar Membaca</h5>
+                        <div class="d-flex align-items-center ms-2">
+                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                         </div>
-                        <hr class="solid">
-                        <router-link to="/detail-sumber-belajar" class="mr-2 mb-3 btn-edit text-light">
-                            <div class="btn-detail">
-                                <span class="btn-detail-teks">Lihat Sumber Belajar</span>
-                                <img src="../assets/arrow-up-right.svg" alt="">
+                        <hr class="inner-card-line">
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <div>
+                                <img src="../assets/profile.svg"
+                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
                             </div>
-                        </router-link>
-                    </div>
+                            <div class="name ms-3">
+                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
                 <!-- Card-->
                 <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" alt="" class="img-fluid d-block mb-3 img-top-radius">
+                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
                     <div class="card-body">
-                        <h5>Mari Belajar Membaca</h5>
-                        <div class="table-responsive">
-                            <table class="table table-borderless">
-                                <tr>
-                                    <th class="px-0">Kontributor</th>
-                                    <td class="px-0">: Wisma Nantha</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Mapel</th>
-                                    <td class="px-0">: Bahasa Inggris</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Kelas</th>
-                                    <td class="px-0">: 4 Minggu</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tgl Upload</th>
-                                    <td class="px-0">: 17-11-2022 10:33:55</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tipe File</th>
-                                    <td class="px-0">: html | HTML5</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Jenis Media</th>
-                                    <td class="px-0">: Video Pembelajaran</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tag</th>
-                                    <td class="px-0">: -</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Penilaian</th>
-                                    <td class="px-0">
-                                        <ul class="list-inline small">
-                                            <li class="list-inline-item m-0">: </li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
+                        <p class="card-desc">Bahasa Inggris</p>
+                        <h5 class="card-title">Mari Belajar Membaca</h5>
+                        <div class="d-flex align-items-center ms-2">
+                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                         </div>
-                        <hr class="solid">
-                        <router-link to="/detail-sumber-belajar" class="mr-2 mb-3 btn-edit text-light">
-                            <div class="btn-detail">
-                                <span class="btn-detail-teks">Lihat Sumber Belajar</span>
-                                <img src="../assets/arrow-up-right.svg" alt="">
+                        <hr class="inner-card-line">
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <div>
+                                <img src="../assets/profile.svg"
+                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
                             </div>
-                        </router-link>
-                    </div>
+                            <div class="name ms-3">
+                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
                 <!-- Card-->
                 <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" alt="" class="img-fluid d-block mb-3 img-top-radius">
+                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
                     <div class="card-body">
-                        <h5>Mari Belajar Membaca</h5>
-                        <div class="table-responsive">
-                            <table class="table table-borderless">
-                                <tr>
-                                    <th class="px-0">Kontributor</th>
-                                    <td class="px-0">: Wisma Nantha</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Mapel</th>
-                                    <td class="px-0">: Bahasa Inggris</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Kelas</th>
-                                    <td class="px-0">: 4 Minggu</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tgl Upload</th>
-                                    <td class="px-0">: 17-11-2022 10:33:55</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tipe File</th>
-                                    <td class="px-0">: html | HTML5</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Jenis Media</th>
-                                    <td class="px-0">: Video Pembelajaran</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tag</th>
-                                    <td class="px-0">: -</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Penilaian</th>
-                                    <td class="px-0">
-                                        <ul class="list-inline small">
-                                            <li class="list-inline-item m-0">: </li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
+                        <p class="card-desc">Bahasa Inggris</p>
+                        <h5 class="card-title">Mari Belajar Membaca</h5>
+                        <div class="d-flex align-items-center ms-2">
+                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                         </div>
-                        <hr class="solid">
-                        <router-link to="/detail-sumber-belajar" class="mr-2 mb-3 btn-edit text-light">
-                            <div class="btn-detail">
-                                <span class="btn-detail-teks">Lihat Sumber Belajar</span>
-                                <img src="../assets/arrow-up-right.svg" alt="">
+                        <hr class="inner-card-line">
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <div>
+                                <img src="../assets/profile.svg"
+                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
                             </div>
-                        </router-link>
-                    </div>
+                            <div class="name ms-3">
+                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
+                <!-- Card-->
+                <div class="card rounded-card shadow border-0">
+                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
+                    <div class="card-body">
+                        <p class="card-desc">Bahasa Inggris</p>
+                        <h5 class="card-title">Mari Belajar Membaca</h5>
+                        <div class="d-flex align-items-center ms-2">
+                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                        </div>
+                        <hr class="inner-card-line">
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <div>
+                                <img src="../assets/profile.svg"
+                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                            </div>
+                            <div class="name ms-3">
+                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
+                <!-- Card-->
+                <div class="card rounded-card shadow border-0">
+                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
+                    <div class="card-body">
+                        <p class="card-desc">Bahasa Inggris</p>
+                        <h5 class="card-title">Mari Belajar Membaca</h5>
+                        <div class="d-flex align-items-center ms-2">
+                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                        </div>
+                        <hr class="inner-card-line">
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <div>
+                                <img src="../assets/profile.svg"
+                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                            </div>
+                            <div class="name ms-3">
+                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
+                <!-- Card-->
+                <div class="card rounded-card shadow border-0">
+                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
+                    <div class="card-body">
+                        <p class="card-desc">Bahasa Inggris</p>
+                        <h5 class="card-title">Mari Belajar Membaca</h5>
+                        <div class="d-flex align-items-center ms-2">
+                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                        </div>
+                        <hr class="inner-card-line">
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <div>
+                                <img src="../assets/profile.svg"
+                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                            </div>
+                            <div class="name ms-3">
+                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>
-        <nav aria-label="Page navigation" class="mb-5">
+        <nav aria-label="Page navigation" class="pb-5 pt-5">
             <ul class="pagination justify-content-center">
                 <li class="page-item disabled">
                     <a class="page-link" href="#" tabindex="-1"><img src="../assets/arrow-left.svg" alt=""><span>Sebelumnya</span></a>
@@ -486,12 +373,21 @@
             </ul>
         </nav>
     </div>
+</div>
 </template>
 
 <style>
+#app {
+        background-image: url("../assets/Background-list-sumber-belajar.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Inter', sans-serif;
+    }
+
 .filter {
-    background-color: #FFFFFF;
     border-radius: 16px;
+    background: linear-gradient(136deg, #EE269D 0%, #9743A6 100%), #FFF;
+    box-shadow: 16px 16px 40px 0px rgba(0, 0, 0, 0.16);
     min-height: 80px;
 }
 
@@ -555,6 +451,13 @@
     display: none !important;
 }
 
+.card-desc {
+    color: var(--primary-700, #6941C6);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+}
+
 .btn-detail-teks {
     color: #ED1C24;
     font-weight: 600;
@@ -572,17 +475,16 @@
     border-color: #D0D5DD !important;
     color: #1D2939 !important;
     border-radius: 5px !important;
-    margin: 0 2px !important;
-    padding: 8px 16px !important;
+    margin: 0 !important;
+    padding: 6px 12px !important;
     transition: background-color .3s !important;
 }
 
 .pagination a {
     border-color: #D0D5DD !important;
     color: #1D2939 !important;
-    border-radius: 5px !important;
-    margin: 0 2px !important;
-    padding: 8px 16px !important;
+    margin: 0 0 !important;
+    padding: 6px 12px !important;
     transition: background-color .3s !important;
 }
 </style>
