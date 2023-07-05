@@ -56,7 +56,7 @@
 
 <style>
     #app {
-        background-image: url("assets/Remake-agak-cerah.svg");
+        background-image: url("assets/DetailBG.svg");
         background-repeat: no-repeat;
         background-size: cover;
         font-family: 'Inter', sans-serif;

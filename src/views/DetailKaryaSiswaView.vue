@@ -1,5 +1,5 @@
 <template>
-    <DetailPage pageTitle="Sumber Belajar" contentTitle="Mari Belajar Membaca" />
+    <DetailPage pageTitle="Karya Siswa" />
 </template>
 
 <script>
