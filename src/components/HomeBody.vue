@@ -1,111 +1,230 @@
 <template>
   <div class="page-content page-home">
-        <section class="text-section" style="padding-bottom: 400px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h1>Halo sobat, selamat datang di Jateng Pintar</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="all-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3 mb-4">
-                        <div class="card h-100 card-hover">
-                            <div class="card-body">
-                                <img src="../assets/icon-sumber-belajar-red.svg" class="img-red" alt="...">
-                                <img src="../assets/icon-sumber-belajar-white.svg" class="img-white" alt="...">
-                                <h5 class="card-title">Sumber Belajar</h5>
-                                <p class="card-text">Temukan beragam sumber belajar yang bermanfaat untuk meningkatkan pemahaman siswa di website kami.</p>
-                                <router-link to="/sumber-belajar" class="btn btn-primary rounded-pill">
-                                    Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
-                                </router-link>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 mb-4">
-                        <div class="card h-100 card-hover">
-                            <div class="card-body">
-                                <img src="../assets/icon-karya-siswa-red.svg" class="img-red" alt="...">
-                                <img src="../assets/icon-karya-siswa-white.svg" class="img-white" alt="...">
-                                <h5 class="card-title">Karya Siswa</h5>
-                                <p class="card-text">Temukan beragam sumber belajar yang bermanfaat untuk meningkatkan pemahaman siswa di website kami.</p>
-                                <a href="karya-siswa-menu.php" class="btn btn-primary rounded-pill">
-                                    Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 mb-4">
-                        <div class="card h-100 card-hover">
-                            <div class="card-body">
-                                <img src="../assets/icon-siswa-jateng-pintar-red.svg" class="img-red" alt="...">
-                                <img src="../assets/icon-siswa-jateng-pintar-white.svg" class="img-white" alt="...">
-                                <h5 class="card-title">Siswa Jateng Pintar</h5>
-                                <p class="card-text">Temukan beragam sumber belajar yang bermanfaat untuk meningkatkan pemahaman siswa di website kami.</p>
-                                <a href="#" class="btn btn-primary rounded-pill">
-                                    Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 mb-4">
-                        <div class="card h-100 card-hover">
-                            <div class="card-body">
-                                <img src="../assets/icon-kontributor-red.svg" class="img-red" alt="...">
-                                <img src="../assets/icon-kontributor-white.svg" class="img-white" alt="...">
-                                <h5 class="card-title">Kontributor</h5>
-                                <p class="card-text">Temukan beragam sumber belajar yang bermanfaat untuk meningkatkan pemahaman siswa di website kami.</p>
-                                <a href="#" class="btn btn-primary rounded-pill">
-                                    Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="text-section" style="padding-bottom: 400px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>Halo sobat, selamat datang di Jateng Pintar</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="button-group">
-            <div class="container">
-                <div class="headline rounded-pill">
-                    <p>Jelajahi Website Lainnya</p>
+    <section class="slider-article">
+      <div class="slide-container">
+        <div class="slide-content">
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img
+                    src="../assets/icon-sumber-belajar-red.svg"
+                    alt=""
+                    class="card-img"
+                  />
                 </div>
-                <div class="row">
-                    <div class="d-flex flex-row flex-wrap justify-content-center mb-4">
-                        <a target="_blank" href="#" class="btn btn-primary rounded-pill d-flex flex-row justify-content-between align-items-center">
-                            <img class="img-logo-left" src="../assets/logo-jateng.svg"/>
-                            Website BPTIK
-                            <img class="img-icon-right" src="../assets/trailing-icon-white.svg"/>
-                        </a>
-                        <a target="_blank" href="https://kelas.jatengprov.go.id/login" class="btn btn-primary rounded-pill d-flex flex-row justify-content-between align-items-center">
-                            <img class="img-logo-left" src="../assets/logo-jateng.svg"/>
-                            Kelas Jateng
-                            <img class="img-icon-right" src="../assets/trailing-icon-white.svg"/>
-                        </a>
-                        <a target="_blank" href="http://radioaudisi.id/" class="btn btn-primary rounded-pill d-flex flex-row justify-content-between align-items-center">
-                            <img class="img-logo-left" src="../assets/logo-radio-audisi.svg"/>
-                            Radio Audisi
-                            <img class="img-icon-right" src="../assets/trailing-icon-white.svg"/>
-                        </a>
-                        <a target="_blank" href="https://simpel.pdkjateng.go.id/" class="btn btn-primary rounded-pill d-flex flex-row justify-content-between align-items-center">
-                            <img class="img-logo-left" src="../assets/logo-jateng.svg"/>
-                            Simpel
-                            <img class="img-icon-right" src="../assets/trailing-icon-white.svg"/>
-                        </a>
-                        <a target="_blank" href="#" class="btn btn-primary rounded-pill d-flex flex-row justify-content-between align-items-center">
-                            <img class="img-logo-left" src="../assets/logo-jateng.svg"/>
-                            Wahana Edukasi
-                            <img class="img-icon-right" src="../assets/trailing-icon-white.svg"/>
-                        </a>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-    </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="all-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 card-hover">
+              <div class="card-body">
+                <img
+                  src="../assets/icon-sumber-belajar-red.svg"
+                  class="img-red"
+                  alt="..."
+                />
+                <img
+                  src="../assets/icon-sumber-belajar-white.svg"
+                  class="img-white"
+                  alt="..."
+                />
+                <h5 class="card-title">Sumber Belajar</h5>
+                <p class="card-text">
+                  Temukan beragam sumber belajar yang bermanfaat untuk
+                  meningkatkan pemahaman siswa di website kami.
+                </p>
+                <router-link
+                  to="/sumber-belajar"
+                  class="btn btn-primary rounded-pill"
+                >
+                  Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
+                </router-link>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 card-hover">
+              <div class="card-body">
+                <img
+                  src="../assets/icon-karya-siswa-red.svg"
+                  class="img-red"
+                  alt="..."
+                />
+                <img
+                  src="../assets/icon-karya-siswa-white.svg"
+                  class="img-white"
+                  alt="..."
+                />
+                <h5 class="card-title">Karya Siswa</h5>
+                <p class="card-text">
+                  Temukan beragam sumber belajar yang bermanfaat untuk
+                  meningkatkan pemahaman siswa di website kami.
+                </p>
+                <a
+                  href="karya-siswa-menu.php"
+                  class="btn btn-primary rounded-pill"
+                >
+                  Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 card-hover">
+              <div class="card-body">
+                <img
+                  src="../assets/icon-siswa-jateng-pintar-red.svg"
+                  class="img-red"
+                  alt="..."
+                />
+                <img
+                  src="../assets/icon-siswa-jateng-pintar-white.svg"
+                  class="img-white"
+                  alt="..."
+                />
+                <h5 class="card-title">Siswa Jateng Pintar</h5>
+                <p class="card-text">
+                  Temukan beragam sumber belajar yang bermanfaat untuk
+                  meningkatkan pemahaman siswa di website kami.
+                </p>
+                <a href="#" class="btn btn-primary rounded-pill">
+                  Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 card-hover">
+              <div class="card-body">
+                <img
+                  src="../assets/icon-kontributor-red.svg"
+                  class="img-red"
+                  alt="..."
+                />
+                <img
+                  src="../assets/icon-kontributor-white.svg"
+                  class="img-white"
+                  alt="..."
+                />
+                <h5 class="card-title">Kontributor</h5>
+                <p class="card-text">
+                  Temukan beragam sumber belajar yang bermanfaat untuk
+                  meningkatkan pemahaman siswa di website kami.
+                </p>
+                <a href="#" class="btn btn-primary rounded-pill">
+                  Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="button-group">
+      <div class="container">
+        <div class="headline rounded-pill">
+          <p>Jelajahi Website Lainnya</p>
+        </div>
+        <div class="row">
+          <div class="d-flex flex-row flex-wrap justify-content-center mb-4">
+            <a
+              target="_blank"
+              href="#"
+              class="btn btn-primary rounded-pill d-flex flex-row justify-content-between align-items-center"
+            >
+              <img class="img-logo-left" src="../assets/logo-jateng.svg" />
+              Website BPTIK
+              <img
+                class="img-icon-right"
+                src="../assets/trailing-icon-white.svg"
+              />
+            </a>
+            <a
+              target="_blank"
+              href="https://kelas.jatengprov.go.id/login"
+              class="btn btn-primary rounded-pill d-flex flex-row justify-content-between align-items-center"
+            >
+              <img class="img-logo-left" src="../assets/logo-jateng.svg" />
+              Kelas Jateng
+              <img
+                class="img-icon-right"
+                src="../assets/trailing-icon-white.svg"
+              />
+            </a>
+            <a
+              target="_blank"
+              href="http://radioaudisi.id/"
+              class="btn btn-primary rounded-pill d-flex flex-row justify-content-between align-items-center"
+            >
+              <img
+                class="img-logo-left"
+                src="../assets/logo-radio-audisi.svg"
+              />
+              Radio Audisi
+              <img
+                class="img-icon-right"
+                src="../assets/trailing-icon-white.svg"
+              />
+            </a>
+            <a
+              target="_blank"
+              href="https://simpel.pdkjateng.go.id/"
+              class="btn btn-primary rounded-pill d-flex flex-row justify-content-between align-items-center"
+            >
+              <img class="img-logo-left" src="../assets/logo-jateng.svg" />
+              Simpel
+              <img
+                class="img-icon-right"
+                src="../assets/trailing-icon-white.svg"
+              />
+            </a>
+            <a
+              target="_blank"
+              href="#"
+              class="btn btn-primary rounded-pill d-flex flex-row justify-content-between align-items-center"
+            >
+              <img class="img-logo-left" src="../assets/logo-jateng.svg" />
+              Wahana Edukasi
+              <img
+                class="img-icon-right"
+                src="../assets/trailing-icon-white.svg"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 <style>
 .text-section {
@@ -202,8 +321,15 @@
 }
 
 .button-group .btn-primary {
-  background-color: #667085;
-  border-color: #667085;
+  background: linear-gradient(
+      154deg,
+      rgba(121, 117, 131, 0.2) 0%,
+      rgba(54, 53, 103, 0.2) 100%
+    ),
+    rgba(49, 48, 54, 0.3);
+  backdrop-filter: blur(2px);
+  border: 6px solid transparent;
+  border-image: linear-gradient(to bottom right, #ee269d, #9743a6) 1;
   width: 240px;
   margin-top: 48px;
   margin-left: 3.5px;
@@ -212,7 +338,6 @@
 
 .button-group .btn-primary:visited {
   background-color: #667085;
-  border: none !important;
   width: 240px;
   margin-top: 48px;
   margin-left: 3.5px;
@@ -220,7 +345,7 @@
 }
 
 .button-group .btn-primary:hover {
-  background-image: linear-gradient(to bottom right, #bb020f, #fd2635);
+  background-image: linear-gradient(to bottom right, #ee269d, #9743a6);
   border: none !important;
   width: 240px;
   margin-top: 48px;
@@ -237,12 +362,12 @@
   margin-left: 0px;
   margin-right: 0px;
   border-style: solid;
-  border-color: #fd2635;
-  border-radius: 24px;
+  border-image: linear-gradient(to bottom right, #ee269d, #9743a6) 1;
+  border-radius: 16px;
 }
 
 .headline {
-  background-color: red;
+  background: linear-gradient(to bottom right, #ee269d, #9743a6);
   color: white;
   font-size: 16px;
   font-weight: 700;
@@ -274,4 +399,15 @@
   float: right;
 }
 
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 </style>
