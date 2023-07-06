@@ -60,10 +60,28 @@
 </script>
 
 <style>
-    #app {
+    body.home {
+        background-image: url("assets/Background-home.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    body.list-sumber-belajar {
+        background-image: url("assets/Background-list-sumber-belajar.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    body.detail-sumber-belajar {
         background-image: url("assets/DetailBG.svg");
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    #app {
+        /* background-image: url("assets/Background-home.svg");
+        background-repeat: no-repeat;
+        background-size: cover; */
         font-family: 'Inter', sans-serif;
     }
 
@@ -125,6 +143,6 @@
     }
 
     .navbar-top-scrolled {
-        background: linear-gradient(135deg, #400085 0%, #35006A 100%);
+        background: linear-gradient(135deg, #794FAC 0%, #402A7E 100%);
     }
 </style>

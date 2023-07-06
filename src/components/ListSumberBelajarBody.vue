@@ -9,7 +9,7 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown me-3">
+                        <li class="nav-item dropdown me-3 py-2">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Terpopuler <img src="../assets/chevron-down.svg" alt="">
                             </a>
@@ -22,7 +22,7 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown me-3">
+                        <li class="nav-item dropdown me-3 py-2">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Jenis Media <img src="../assets/chevron-down.svg" alt="">
                             </a>
@@ -38,7 +38,7 @@
                                 
                             </ul>
                         </li>
-                        <li class="nav-item dropdown me-3">
+                        <li class="nav-item dropdown me-3 py-2">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Mapel <img src="../assets/chevron-down.svg" alt="">
                             </a>
@@ -51,7 +51,7 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown me-3">
+                        <li class="nav-item dropdown me-3 py-2">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Pindah Jenjang <img src="../assets/chevron-down.svg" alt="">
                             </a>
@@ -65,7 +65,7 @@
                                 <li><a class="dropdown-item" href="#">BUDAYA</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown me-3">
+                        <li class="nav-item dropdown me-3 py-2">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Kategori <img src="../assets/chevron-down.svg" alt="">
                             </a>
@@ -77,7 +77,7 @@
                                 <li><a class="dropdown-item" href="#">AR/VR</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown me-3">
+                        <li class="nav-item dropdown me-3 py-2">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Kelas <img src="../assets/chevron-down.svg" alt="">
                             </a>
@@ -103,259 +103,286 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
                 <!-- Card-->
-                <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
-                    <div class="card-body">
-                        <p class="card-desc">Bahasa Inggris</p>
-                        <h5 class="card-title">Mari Belajar Membaca</h5>
-                        <div class="d-flex align-items-center ms-2">
-                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                        </div>
-                        <hr class="inner-card-line">
-                        <div class="d-flex flex-row align-items-center py-2">
-                            <div>
-                                <img src="../assets/profile.svg"
-                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                <router-link to="/detail-sumber-belajar" class="card-link">
+                    <div class="card rounded-card shadow border-0">
+                        <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
+                        <div class="card-body">
+                            <p class="card-label">Bahasa Inggris</p>
+                            <p class="card-desc">Kelas XII MIPA • File: Video (mp4)</p>
+                            <h5 class="card-title">Mari Belajar Membaca</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card-rating me-1 px-2" style="margin-bottom: 0px !important;">Membaca</p>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                             </div>
-                            <div class="name ms-3">
-                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            <hr class="inner-card-line">
+                            <div class="d-flex flex-row align-items-center py-2">
+                                <div>
+                                    <img src="../assets/profile.svg"
+                                        style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                                </div>
+                                <div class="name ms-3">
+                                    <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                                </div>
                             </div>
-                        </div>
-                    </div>  
-                </div>
+                        </div>  
+                    </div>
+                </router-link>
             </div>
 
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
                 <!-- Card-->
-                <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
-                    <div class="card-body">
-                        <p class="card-desc">Bahasa Inggris</p>
-                        <h5 class="card-title">Mari Belajar Membaca</h5>
-                        <div class="d-flex align-items-center ms-2">
-                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                        </div>
-                        <hr class="inner-card-line">
-                        <div class="d-flex flex-row align-items-center py-2">
-                            <div>
-                                <img src="../assets/profile.svg"
-                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                <router-link to="/detail-sumber-belajar" class="card-link">
+                    <div class="card rounded-card shadow border-0">
+                        <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
+                        <div class="card-body">
+                            <p class="card-label">Bahasa Inggris</p>
+                            <p class="card-desc">Kelas XII MIPA • File: Video (mp4)</p>
+                            <h5 class="card-title">Mari Belajar Membaca</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card-rating me-1 px-2" style="margin-bottom: 0px !important;">Membaca</p>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                             </div>
-                            <div class="name ms-3">
-                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            <hr class="inner-card-line">
+                            <div class="d-flex flex-row align-items-center py-2">
+                                <div>
+                                    <img src="../assets/profile.svg"
+                                        style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                                </div>
+                                <div class="name ms-3">
+                                    <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                                </div>
                             </div>
-                        </div>
-                    </div>  
-                </div>
+                        </div>  
+                    </div>
+                </router-link>
             </div>
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
                 <!-- Card-->
-                <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
-                    <div class="card-body">
-                        <p class="card-desc">Bahasa Inggris</p>
-                        <h5 class="card-title">Mari Belajar Membaca</h5>
-                        <div class="d-flex align-items-center ms-2">
-                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                        </div>
-                        <hr class="inner-card-line">
-                        <div class="d-flex flex-row align-items-center py-2">
-                            <div>
-                                <img src="../assets/profile.svg"
-                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                <router-link to="/detail-sumber-belajar" class="card-link">
+                    <div class="card rounded-card shadow border-0">
+                        <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
+                        <div class="card-body">
+                            <p class="card-label">Bahasa Inggris</p>
+                            <p class="card-desc">Kelas XII MIPA • File: Video (mp4)</p>
+                            <h5 class="card-title">Mari Belajar Membaca</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card-rating me-1 px-2" style="margin-bottom: 0px !important;">Membaca</p>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                             </div>
-                            <div class="name ms-3">
-                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            <hr class="inner-card-line">
+                            <div class="d-flex flex-row align-items-center py-2">
+                                <div>
+                                    <img src="../assets/profile.svg"
+                                        style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                                </div>
+                                <div class="name ms-3">
+                                    <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                                </div>
                             </div>
-                        </div>
-                    </div>  
-                </div>
+                        </div>  
+                    </div>
+                </router-link>
             </div>
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
                 <!-- Card-->
-                <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
-                    <div class="card-body">
-                        <p class="card-desc">Bahasa Inggris</p>
-                        <h5 class="card-title">Mari Belajar Membaca</h5>
-                        <div class="d-flex align-items-center ms-2">
-                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                        </div>
-                        <hr class="inner-card-line">
-                        <div class="d-flex flex-row align-items-center py-2">
-                            <div>
-                                <img src="../assets/profile.svg"
-                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                <router-link to="/detail-sumber-belajar" class="card-link">
+                    <div class="card rounded-card shadow border-0">
+                        <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
+                        <div class="card-body">
+                            <p class="card-label">Bahasa Inggris</p>
+                            <p class="card-desc">Kelas XII MIPA • File: Video (mp4)</p>
+                            <h5 class="card-title">Mari Belajar Membaca</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card-rating me-1 px-2" style="margin-bottom: 0px !important;">Membaca</p>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                             </div>
-                            <div class="name ms-3">
-                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            <hr class="inner-card-line">
+                            <div class="d-flex flex-row align-items-center py-2">
+                                <div>
+                                    <img src="../assets/profile.svg"
+                                        style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                                </div>
+                                <div class="name ms-3">
+                                    <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                                </div>
                             </div>
-                        </div>
-                    </div>  
-                </div>
+                        </div>  
+                    </div>
+                </router-link>
             </div>
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
                 <!-- Card-->
-                <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
-                    <div class="card-body">
-                        <p class="card-desc">Bahasa Inggris</p>
-                        <h5 class="card-title">Mari Belajar Membaca</h5>
-                        <div class="d-flex align-items-center ms-2">
-                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                        </div>
-                        <hr class="inner-card-line">
-                        <div class="d-flex flex-row align-items-center py-2">
-                            <div>
-                                <img src="../assets/profile.svg"
-                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                <router-link to="/detail-sumber-belajar" class="card-link">
+                    <div class="card rounded-card shadow border-0">
+                        <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
+                        <div class="card-body">
+                            <p class="card-label">Bahasa Inggris</p>
+                            <p class="card-desc">Kelas XII MIPA • File: Video (mp4)</p>
+                            <h5 class="card-title">Mari Belajar Membaca</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card-rating me-1 px-2" style="margin-bottom: 0px !important;">Membaca</p>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                             </div>
-                            <div class="name ms-3">
-                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            <hr class="inner-card-line">
+                            <div class="d-flex flex-row align-items-center py-2">
+                                <div>
+                                    <img src="../assets/profile.svg"
+                                        style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                                </div>
+                                <div class="name ms-3">
+                                    <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                                </div>
                             </div>
-                        </div>
-                    </div>  
-                </div>
+                        </div>  
+                    </div>
+                </router-link>
             </div>
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
                 <!-- Card-->
-                <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
-                    <div class="card-body">
-                        <p class="card-desc">Bahasa Inggris</p>
-                        <h5 class="card-title">Mari Belajar Membaca</h5>
-                        <div class="d-flex align-items-center ms-2">
-                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                        </div>
-                        <hr class="inner-card-line">
-                        <div class="d-flex flex-row align-items-center py-2">
-                            <div>
-                                <img src="../assets/profile.svg"
-                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                <router-link to="/detail-sumber-belajar" class="card-link">
+                    <div class="card rounded-card shadow border-0">
+                        <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
+                        <div class="card-body">
+                            <p class="card-label">Bahasa Inggris</p>
+                            <p class="card-desc">Kelas XII MIPA • File: Video (mp4)</p>
+                            <h5 class="card-title">Mari Belajar Membaca</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card-rating me-1 px-2" style="margin-bottom: 0px !important;">Membaca</p>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                             </div>
-                            <div class="name ms-3">
-                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            <hr class="inner-card-line">
+                            <div class="d-flex flex-row align-items-center py-2">
+                                <div>
+                                    <img src="../assets/profile.svg"
+                                        style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                                </div>
+                                <div class="name ms-3">
+                                    <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                                </div>
                             </div>
-                        </div>
-                    </div>  
-                </div>
+                        </div>  
+                    </div>
+                </router-link>
             </div>
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
                 <!-- Card-->
-                <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
-                    <div class="card-body">
-                        <p class="card-desc">Bahasa Inggris</p>
-                        <h5 class="card-title">Mari Belajar Membaca</h5>
-                        <div class="d-flex align-items-center ms-2">
-                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                        </div>
-                        <hr class="inner-card-line">
-                        <div class="d-flex flex-row align-items-center py-2">
-                            <div>
-                                <img src="../assets/profile.svg"
-                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                <router-link to="/detail-sumber-belajar" class="card-link">
+                    <div class="card rounded-card shadow border-0">
+                        <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
+                        <div class="card-body">
+                            <p class="card-label">Bahasa Inggris</p>
+                            <p class="card-desc">Kelas XII MIPA • File: Video (mp4)</p>
+                            <h5 class="card-title">Mari Belajar Membaca</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card-rating me-1 px-2" style="margin-bottom: 0px !important;">Membaca</p>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                             </div>
-                            <div class="name ms-3">
-                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            <hr class="inner-card-line">
+                            <div class="d-flex flex-row align-items-center py-2">
+                                <div>
+                                    <img src="../assets/profile.svg"
+                                        style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                                </div>
+                                <div class="name ms-3">
+                                    <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                                </div>
                             </div>
-                        </div>
-                    </div>  
-                </div>
+                        </div>  
+                    </div>
+                </router-link>
             </div>
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
                 <!-- Card-->
-                <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
-                    <div class="card-body">
-                        <p class="card-desc">Bahasa Inggris</p>
-                        <h5 class="card-title">Mari Belajar Membaca</h5>
-                        <div class="d-flex align-items-center ms-2">
-                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                        </div>
-                        <hr class="inner-card-line">
-                        <div class="d-flex flex-row align-items-center py-2">
-                            <div>
-                                <img src="../assets/profile.svg"
-                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                <router-link to="/detail-sumber-belajar" class="card-link">
+                    <div class="card rounded-card shadow border-0">
+                        <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
+                        <div class="card-body">
+                            <p class="card-label">Bahasa Inggris</p>
+                            <p class="card-desc">Kelas XII MIPA • File: Video (mp4)</p>
+                            <h5 class="card-title">Mari Belajar Membaca</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card-rating me-1 px-2" style="margin-bottom: 0px !important;">Membaca</p>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                             </div>
-                            <div class="name ms-3">
-                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            <hr class="inner-card-line">
+                            <div class="d-flex flex-row align-items-center py-2">
+                                <div>
+                                    <img src="../assets/profile.svg"
+                                        style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                                </div>
+                                <div class="name ms-3">
+                                    <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                                </div>
                             </div>
-                        </div>
-                    </div>  
-                </div>
+                        </div>  
+                    </div>
+                </router-link>
             </div>
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
                 <!-- Card-->
-                <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
-                    <div class="card-body">
-                        <p class="card-desc">Bahasa Inggris</p>
-                        <h5 class="card-title">Mari Belajar Membaca</h5>
-                        <div class="d-flex align-items-center ms-2">
-                            <p class="card-desc me-2" style="margin-bottom: 0px !important;">Membaca</p>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                        </div>
-                        <hr class="inner-card-line">
-                        <div class="d-flex flex-row align-items-center py-2">
-                            <div>
-                                <img src="../assets/profile.svg"
-                                    style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                <router-link to="/detail-sumber-belajar" class="card-link">
+                    <div class="card rounded-card shadow border-0">
+                        <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
+                        <div class="card-body">
+                            <p class="card-label">Bahasa Inggris</p>
+                            <p class="card-desc">Kelas XII MIPA • File: Video (mp4)</p>
+                            <h5 class="card-title">Mari Belajar Membaca</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card-rating me-1 px-2" style="margin-bottom: 0px !important;">Membaca</p>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                             </div>
-                            <div class="name ms-3">
-                                <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                            <hr class="inner-card-line">
+                            <div class="d-flex flex-row align-items-center py-2">
+                                <div>
+                                    <img src="../assets/profile.svg"
+                                        style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                                </div>
+                                <div class="name ms-3">
+                                    <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                                </div>
                             </div>
-                        </div>
-                    </div>  
-                </div>
+                        </div>  
+                    </div>
+                </router-link>
             </div>
         </div>
-        <nav aria-label="Page navigation" class="pb-5 pt-5">
+        <!-- <nav aria-label="Page navigation" class="pb-5 pt-5">
             <ul class="pagination justify-content-center">
                 <li class="page-item disabled">
                     <a class="page-link" href="#" tabindex="-1"><img src="../assets/arrow-left.svg" alt=""><span>Sebelumnya</span></a>
@@ -371,49 +398,17 @@
                     <a class="page-link" href="#"><span>Selanjutnya</span><img src="../assets/arrow-right.svg" alt=""></a>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
     </div>
 </div>
 </template>
 
-<style>
-#app {
-        background-image: url("../assets/Background-list-sumber-belajar.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-family: 'Inter', sans-serif;
-    }
-
+<style scoped>
 .filter {
     border-radius: 16px;
     background: linear-gradient(136deg, #EE269D 0%, #9743A6 100%), #FFF;
     box-shadow: 16px 16px 40px 0px rgba(0, 0, 0, 0.16);
     min-height: 80px;
-}
-
-.filter-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    gap: 80px;
-}
-
-.filter-title {
-    font-weight: 600 !important;
-    font-size: 24px !important;
-    color: #1D2939;
-}
-
-.search-form {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .dropdown-toggle {
@@ -447,28 +442,43 @@
     border-top-right-radius: 20px;
 }
 
-.list-inline-item .list-inline .star-widget input {
-    display: none !important;
-}
-
-.card-desc {
+.card-label {
     color: var(--primary-700, #6941C6);
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
 }
 
-.btn-detail-teks {
-    color: #ED1C24;
+.card-desc {
+    color: var(--gray-700, #344054);
+    font-size: 14px;
+    font-style: normal;
     font-weight: 600;
 }
 
-.btn-detail {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
+.card-title {
+    color: var(--gray-900, #101828) !important;
+    font-size: 24px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+}
+
+.card-rating {
+    border-radius: 16px;
+    background: var(--primary-50, #F9F5FF);
+    color: var(--primary-700, #6941C6);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.inner-card-line {
+    background: var(--gray-200, #EAECF0);
 }
 
 .pagination span {
