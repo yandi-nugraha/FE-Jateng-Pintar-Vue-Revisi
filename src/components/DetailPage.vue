@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="d-flex flex-row align-items-center mt-5">
-            <div class="backBtn d-flex justify-content-center align-items-center">
+            <div class="back-btn d-flex justify-content-center align-items-center">
                 <router-link to="/list-sumber-belajar"><i class="bi bi-arrow-left-short"></i></router-link>
             </div>
             <div class="ms-3">
@@ -86,48 +86,50 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <button class="btn btn-danger" style="background-color: #ED1C24; padding: 5px;"><i class="bi bi-plus-circle me-2"></i>Berlangganan</button>
+                    <button class="btn btn-danger" style="border: none; padding: 5px; background-image: linear-gradient(to right, #EE269D, #9743A6); background-clip: padding-box;"><i class="bi bi-plus-circle me-2"></i>Berlangganan</button>
                 </div>
             </div>
 
             <hr class="mb-4">
 
-            <h4 style="font-weight: 600;">Perkembangan Teknologi Transportasi</h4>
-
-            <div class="table-responsive">
-                <table class="table table-borderless w-auto">
-                    <tr>
-                        <th class="ps-0 pe-2">Kontributor</th>
-                        <td class="px-0">: Wisma Nantha</td>
-                    </tr>
-                    <tr>
-                        <th class="ps-0 pe-2">Mapel</th>
-                        <td class="px-0">: Bahasa Indonesia</td>
-                    </tr>
-                    <tr>
-                        <th class="ps-0 pe-2">Kelas</th>
-                        <td class="px-0">: 3 SD/MI</td>
-                    </tr>
-                    <tr>
-                        <th class="ps-0 pe-2">Tgl Upload</th>
-                        <td class="px-0">: 17-11-2022 10:33:55</td>
-                    </tr>
-                    <tr>
-                        <th class="ps-0 pe-2">Tipe File</th>
-                        <td class="px-0">: html | HTML5</td>
-                    </tr>
-                    <tr>
-                        <th class="ps-0 pe-2">Penilaian</th>
-                        <td class="px-0">: 4,5 / 5 Rating</td>
-                    </tr>
-                    <tr>
-                        <th class="ps-0 pe-2">Penjelasan</th>
-                        <!-- <td class="px-0">: Video ini berisikan pengenalan huruf "ba","bi","bu","be" dan "bo". Materi ini disertai juga dengan contoh kata yang diawali dengan suku kata "ba","bi","bu',"be" dan "bo". Video pembelajaran ini dikhususkan untuk anak berkebutuhan khusus ata...</td> -->
-                    </tr>
-                </table>
+            <h4 style="font-weight: bold; color: #1D2939;">{{ contentTitle }}</h4>
+            
+            <p style="font-weight: bold; margin-bottom: 0; color: #344054;">Penjelasan</p>
+            <div v-if="isCollapsed">
+                <p class="collapsed-text">
+                    {{ shortText }}
+                    <button @click="isCollapsed = !isCollapsed" style="border: none; background: none; color: #4A5365; padding: 0px;">...</button>
+                </p>
             </div>
+            <div v-else>
+                <p class="expanded-text">
+                    {{ longText }}
+                    <button @click="isCollapsed = !isCollapsed" style="border: none; background: none; color: gray; padding: 0px;">Show Less</button>
+                </p>
+            </div>
+
+            <div>
+                <hr class="hr-detail">
+                <div class="d-flex flex-wrap">
+                    <div class="col-1" style="font-weight: bold; color: #344054;">Mapel</div>
+                    <div class="col-11" style="color: #475467;">: Bahasa Inggris</div>
+                </div>
+                <hr class="hr-detail">
+                <div class="d-flex flex-wrap">
+                    <div class="col-1" style="font-weight: bold; color: #344054;">Kelas</div>
+                    <div class="col-11" style="color: #475467;">: 4 Minggu</div>
+                </div>
+                <hr class="hr-detail">
+                <div class="d-flex flex-wrap">
+                    <div class="col-1" style="font-weight: bold; color: #344054">Tipe File</div>
+                    <div class="col-11" style="color: #475467;">: html | HTML5</div>
+                </div>
+            </div>
+
+            <hr style="margin-top: 24px;">
+
             <div class="d-flex flex-row flex-wrap mt-3 mb-4 mx-auto">
-                <button type="button" class="btn1 btn py-2 me-3" style="background-color: #ED1C24;"><i class="bi bi-download me-2"></i>Download Materi</button>
+                <button type="button" class="btn1 btn py-2 me-3"><i class="bi bi-download me-2"></i>Download Materi</button>
                 <button type="button" class="btn2 btn py-2 me-3"><i class="fa-solid fa-paperclip fa-sm me-2"></i>Naskah</button>
                 <button type="button" class="btn2 btn py-2"><i class="bi bi-chat-left me-2"></i>Lapor</button>
             </div>
@@ -389,18 +391,32 @@
                 </li>
             </ul>
         </nav> -->
+
+        <!-- test -->
+        
     </div>
 </template>
 
 <script>
 export default {
-    props: ['pageTitle', 'contentTitle']
+    props: ['pageTitle', 'contentTitle'],
+    data() {
+        return {
+            isCollapsed: true,
+            shortText: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum dicta molestiae possimus incidunt! Omnis, a! Est eum, eaque, expedita, perferendis veritatis dolor maiores sunt perspiciatis ratione officia consectetur aut?",
+            longText: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum dicta molestiae possimus incidunt! Omnis, a! Est eum, eaque, expedita, perferendis veritatis dolor maiores sunt perspiciatis ratione officia consectetur aut? Velit, nulla! Modi recusandae odit fugiat accusantium molestiae beatae non voluptate maxime adipisci iusto ad sapiente provident, asperiores rerum quidem obcaecati. Suscipit voluptatum possimus laboriosam, asperiores tenetur sit distinctio. Porro quasi autem temporibus aspernatur non ut excepturi officia, odit pariatur dolorem consequuntur, similique molestias necessitatibus voluptatibus id odio natus. Incidunt nesciunt repellat voluptates ipsum accusamus. Sint molestiae voluptate voluptatum dignissimos odit tempore officia ipsam? Sunt, est similique? Eius eveniet quo voluptatibus."
+        };
+    }
 }
 </script>
 
 <style>
-    .backBtn {
-        background: linear-gradient(to right, #EE269D, #9743A6);
+    p {
+        color: #475467;
+    }
+    .back-btn {
+        background-image: linear-gradient(to right, #EE269D, #9743A6);
+        background-clip: padding-box;
         width: 55px;
         height: 55px;
         font-size: 34px;
@@ -436,6 +452,8 @@ export default {
     }
 
     .btn1 {
+        background-image: linear-gradient(to right, #EE269D, #9743A6);
+        background-clip: padding-box;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         color: #FFFFFF;
     }
@@ -451,7 +469,8 @@ export default {
     }
 
     .label-lainnya {
-        background: #ED1C24;
+        background-image: linear-gradient(to right, #EE269D, #9743A6);
+        background-clip: padding-box;
         border-radius: 14px;
         margin-top: 25px;
         margin-bottom: 25px;
@@ -540,13 +559,15 @@ export default {
     .comment {
         border: solid 1px #D0D5DD;
         border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
         font-size: 16px;
         color: #333;
         width: 100%;
         height: 124px;
         overflow: auto;
         transition: border-color 0.3s ease;
+        padding: 10px;
+        margin-bottom: 6px;
     }
 
     .comment:focus {
@@ -587,7 +608,7 @@ export default {
         z-index: 2;
         margin-left: -20px;
         margin-top: 60px;
-        padding: 3px;
+        padding: 1px;
         background-color: white;
         border-radius: 50%;
     }
@@ -597,5 +618,10 @@ export default {
         height: 400px;
         overflow: auto;
         position: relative;
+    }
+
+    .hr-detail {
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
 </style>
