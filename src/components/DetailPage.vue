@@ -527,7 +527,6 @@ export default {
     .pagination a {
         border-color: #D0D5DD !important;
         color: #1D2939 !important;
-        border-radius: 5px !important;
         margin: 0 2px !important;
         padding: 8px 16px !important;
         transition: background-color .3s !important;

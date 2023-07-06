@@ -8,6 +8,10 @@ import HomeBody from '@/components/HomeBody.vue'
 
 export default {
   name: 'HomeView',
+  beforeCreate: function() {
+    document.body.className = 'home';
+    console.log('Body class changed to home');
+  },
   components: {
     HomeBody
   }

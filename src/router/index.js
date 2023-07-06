@@ -30,7 +30,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "kontak" */ '../components/ListSumberBelajarBody.vue')
+    component: () => import(/* webpackChunkName: "kontak" */ '../views/ListSumberBelajarView.vue')
   },
   {
     path: '/sumber-belajar',
