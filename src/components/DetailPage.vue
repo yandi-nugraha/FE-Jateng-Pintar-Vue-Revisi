@@ -10,7 +10,8 @@
                         <router-link to="/" style="text-decoration: none; color: inherit;">Beranda</router-link>
                     </li>
                     <li class="breadcrumb-item">
-                        <router-link to="/list-sumber-belajar" style="text-decoration: none; color: inherit;">{{ pageTitle }}</router-link>
+                        <router-link to="/list-sumber-belajar" style="text-decoration: none; color: inherit;">
+                            {{ pageTitle }}</router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">{{ contentTitle }}</li>
                 </ol>
@@ -46,92 +47,134 @@
             <hr>
 
             <!-- <div class="d-flex flex-wrap align-items-center py-2"> -->
-            <div class="row align-items-center py-2">
-                <div class="col-1">
-                    <img src="../assets/profile.svg"
-                        style="padding: 3.5px; background-color: white; box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%;">
-                </div>
-                <div class="col name">
-                    <h3 style="margin-bottom: 0px !important">Wisma Nantha</h3>
-                    <p class="text-secondary" style="margin-bottom: 0px !important">1 Materi, Dilihat 99.999.999.999 kali, Diupload 17-11-2022 10:33:55</p>
-                    <div class="d-flex align-items-center">
-                        <h6 class="me-2 my-0">Rating materi :</h6>
-                        <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                        <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                        <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
-                        <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
-                        <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+            <div class="row align-items-center">
+                <div class="col-lg-1 col-md-3 col-sm-12 align-items-center py-2">
+                    <div>
+                        <img src="../assets/profile.svg"
+                            style="padding: 3.5px; background-color: white; box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%;">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-auto col-md-auto col-sm-12 align-items-center py-2">
+                    <div class="name">
+                        <h3 style="margin-bottom: 0px !important">Wisma Nantha</h3>
+                        <p class="text-secondary" style="margin-bottom: 0px !important">1 Materi, Dilihat 99.999.999.999
+                            kali, Diupload 17-11-2022 10:33:55</p>
+                        <div class="d-flex align-items-center">
+                            <h6 class="me-2 my-0">Rating materi :</h6>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i>
+                            </li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i>
+                            </li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i>
+                            </li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i>
+                            </li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-auto ms-auto col-md-auto col-sm-12 align-items-center py-2">
                     <div class="d-flex align-items-center">
                         <div class="d-flex align-items-center me-3 share-button">
-                            <h6 class="my-0" style="padding-left: 5px !important; padding-right: 5px !important;">Bagikan dengan yang lain</h6>
+                            <h6 class="my-0" style="padding-left: 5px !important; padding-right: 5px !important;">
+                                Bagikan dengan yang lain</h6>
                             <div class="hover-effect">
-                                <div class="img-share-hover"><router-link to="/detail-sumber-belajar"><img src="../assets/FacebookLogoHover.svg"></router-link></div>
-                                <div class="img-share"><router-link to="/detail-sumber-belajar"><img src="../assets/FacebookLogo.svg"></router-link></div>
+                                <div class="img-share-hover">
+                                    <router-link to="/detail-sumber-belajar"><img src="../assets/FacebookLogoHover.svg">
+                                    </router-link>
+                                </div>
+                                <div class="img-share">
+                                    <router-link to="/detail-sumber-belajar"><img src="../assets/FacebookLogo.svg">
+                                    </router-link>
+                                </div>
                             </div>
                             <div class="hover-effect">
-                                <div class="img-share-hover"><router-link to="/detail-sumber-belajar"><img src="../assets/InstagramLogoHover.svg"></router-link></div>
-                                <div class="img-share"><router-link to="/detail-sumber-belajar"><img src="../assets/InstagramLogo.svg"></router-link></div>
+                                <div class="img-share-hover">
+                                    <router-link to="/detail-sumber-belajar"><img
+                                            src="../assets/InstagramLogoHover.svg"></router-link>
+                                </div>
+                                <div class="img-share">
+                                    <router-link to="/detail-sumber-belajar"><img src="../assets/InstagramLogo.svg">
+                                    </router-link>
+                                </div>
                             </div>
                             <div class="hover-effect">
-                                <div class="img-share-hover"><router-link to="/detail-sumber-belajar"><img src="../assets/TwitterLogoHover.svg"></router-link></div>
-                                <div class="img-share"><router-link to="/detail-sumber-belajar"><img src="../assets/TwitterLogo.svg"></router-link></div>
+                                <div class="img-share-hover">
+                                    <router-link to="/detail-sumber-belajar"><img src="../assets/TwitterLogoHover.svg">
+                                    </router-link>
+                                </div>
+                                <div class="img-share">
+                                    <router-link to="/detail-sumber-belajar"><img src="../assets/TwitterLogo.svg">
+                                    </router-link>
+                                </div>
                             </div>
                             <div class="hover-effect">
-                                <div class="img-share-hover"><router-link to="/detail-sumber-belajar"><img src="../assets/WhatsappLogoHover.svg"></router-link></div>
-                                <div class="img-share"><router-link to="/detail-sumber-belajar"><img src="../assets/WhatsappLogo.svg"></router-link></div>
+                                <div class="img-share-hover">
+                                    <router-link to="/detail-sumber-belajar"><img src="../assets/WhatsappLogoHover.svg">
+                                    </router-link>
+                                </div>
+                                <div class="img-share">
+                                    <router-link to="/detail-sumber-belajar"><img src="../assets/WhatsappLogo.svg">
+                                    </router-link>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <button class="btn btn-danger" style="border: none; padding: 5px; background-image: linear-gradient(to right, #EE269D, #9743A6); background-clip: padding-box;"><i class="bi bi-plus-circle me-2"></i>Berlangganan</button>
+                <div class="col-lg-auto col-md-auto col-sm-12 align-items-center py-2">
+                    <button class="btn btn-danger"
+                        style="border: none; padding: 5px; background-image: linear-gradient(to right, #EE269D, #9743A6); background-clip: padding-box;"><i
+                            class="bi bi-plus-circle me-2"></i>Berlangganan</button>
                 </div>
+
             </div>
 
             <hr class="mb-4">
 
             <h4 style="font-weight: bold; color: #1D2939;">{{ contentTitle }}</h4>
-            
+
             <p style="font-weight: bold; margin-bottom: 0; color: #344054;">Penjelasan</p>
             <div v-if="isCollapsed">
                 <p class="collapsed-text">
                     {{ shortText }}
-                    <button @click="isCollapsed = !isCollapsed" style="border: none; background: none; color: #4A5365; padding: 0px;">...</button>
+                    <button @click="isCollapsed = !isCollapsed"
+                        style="border: none; background: none; color: #4A5365; padding: 0px;">...</button>
                 </p>
             </div>
             <div v-else>
                 <p class="expanded-text">
                     {{ longText }}
-                    <button @click="isCollapsed = !isCollapsed" style="border: none; background: none; color: gray; padding: 0px;">Show Less</button>
+                    <button @click="isCollapsed = !isCollapsed"
+                        style="border: none; background: none; color: gray; padding: 0px;">Show Less</button>
                 </p>
             </div>
 
             <div>
                 <hr class="hr-detail">
                 <div class="d-flex flex-wrap">
-                    <div class="col-1" style="font-weight: bold; color: #344054;">Mapel</div>
-                    <div class="col-11" style="color: #475467;">: Bahasa Inggris</div>
+                    <div class="col-lg-1 col-md-2 col-3" style="font-weight: bold; color: #344054;">Mapel</div>
+                    <div class="col-lg-auto col-md-auto col-sm-auto" style="color: #475467;">: Bahasa Inggris</div>
                 </div>
                 <hr class="hr-detail">
                 <div class="d-flex flex-wrap">
-                    <div class="col-1" style="font-weight: bold; color: #344054;">Kelas</div>
-                    <div class="col-11" style="color: #475467;">: 4 Minggu</div>
+                    <div class="col-lg-1 col-md-2 col-3" style="font-weight: bold; color: #344054;">Kelas</div>
+                    <div class="col-lg-auto col-md-auto col-sm-auto" style="color: #475467;">: 4 Minggu</div>
                 </div>
                 <hr class="hr-detail">
                 <div class="d-flex flex-wrap">
-                    <div class="col-1" style="font-weight: bold; color: #344054">Tipe File</div>
-                    <div class="col-11" style="color: #475467;">: html | HTML5</div>
+                    <div class="col-lg-1 col-md-2 col-3" style="font-weight: bold; color: #344054">Tipe File</div>
+                    <div class="col-lg-auto col-md-auto col-sm-auto" style="color: #475467;">: html | HTML5</div>
                 </div>
             </div>
 
             <hr style="margin-top: 24px;">
 
             <div class="d-flex flex-row flex-wrap mt-3 mb-4 mx-auto">
-                <button type="button" class="btn1 btn py-2 me-3"><i class="bi bi-download me-2"></i>Download Materi</button>
-                <button type="button" class="btn2 btn py-2 me-3"><i class="fa-solid fa-paperclip fa-sm me-2"></i>Naskah</button>
+                <button type="button" class="btn1 btn py-2 me-3"><i class="bi bi-download me-2"></i>Download
+                    Materi</button>
+                <button type="button" class="btn2 btn py-2 me-3"><i
+                        class="fa-solid fa-paperclip fa-sm me-2"></i>Naskah</button>
                 <button type="button" class="btn2 btn py-2"><i class="bi bi-chat-left me-2"></i>Lapor</button>
             </div>
             <div>
@@ -144,26 +187,28 @@
             <div class="scrollview">
                 <div class="d-flex flex-row py-2">
                     <div>
-                        <img src="../assets/profile.svg"
-                            style="border-radius: 50%;">
+                        <img src="../assets/profile.svg" style="border-radius: 50%;">
                         <img src="../assets/online.svg" class="online-avatar">
                     </div>
                     <div class="name ms-3">
                         <p class="commenter-name mb-2">Olivia Rhye</p>
                         <p class="commenter-job mb-2">Designer AR</p>
-                        <p class="commenter-coment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ipsa aut et earum repellendus nihil recusandae mollitia ea porro numquam suscipit dolor quam aliquam ex voluptate tempora, in pariatur deleniti?</p>
+                        <p class="commenter-coment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
+                            ipsa aut et earum repellendus nihil recusandae mollitia ea porro numquam suscipit dolor quam
+                            aliquam ex voluptate tempora, in pariatur deleniti?</p>
                     </div>
                 </div>
                 <div class="d-flex flex-row py-2">
                     <div>
-                        <img src="../assets/profile.svg"
-                            style="border-radius: 50%;">
+                        <img src="../assets/profile.svg" style="border-radius: 50%;">
                         <img src="../assets/online.svg" class="online-avatar">
                     </div>
                     <div class="name ms-3">
                         <p class="commenter-name mb-2">Olivia Rhye</p>
                         <p class="commenter-job mb-2">Designer AR</p>
-                        <p class="commenter-coment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ipsa aut et earum repellendus nihil recusandae mollitia ea porro numquam suscipit dolor quam aliquam ex voluptate tempora, in pariatur deleniti?</p>
+                        <p class="commenter-coment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
+                            ipsa aut et earum repellendus nihil recusandae mollitia ea porro numquam suscipit dolor quam
+                            aliquam ex voluptate tempora, in pariatur deleniti?</p>
                     </div>
                 </div>
             </div>
@@ -394,27 +439,28 @@
         </nav> -->
 
         <!-- test -->
-        
+
     </div>
 </template>
 
 <script>
-export default {
-    props: ['pageTitle', 'contentTitle'],
-    data() {
-        return {
-            isCollapsed: true,
-            shortText: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum dicta molestiae possimus incidunt! Omnis, a! Est eum, eaque, expedita, perferendis veritatis dolor maiores sunt perspiciatis ratione officia consectetur aut?",
-            longText: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum dicta molestiae possimus incidunt! Omnis, a! Est eum, eaque, expedita, perferendis veritatis dolor maiores sunt perspiciatis ratione officia consectetur aut? Velit, nulla! Modi recusandae odit fugiat accusantium molestiae beatae non voluptate maxime adipisci iusto ad sapiente provident, asperiores rerum quidem obcaecati. Suscipit voluptatum possimus laboriosam, asperiores tenetur sit distinctio. Porro quasi autem temporibus aspernatur non ut excepturi officia, odit pariatur dolorem consequuntur, similique molestias necessitatibus voluptatibus id odio natus. Incidunt nesciunt repellat voluptates ipsum accusamus. Sint molestiae voluptate voluptatum dignissimos odit tempore officia ipsam? Sunt, est similique? Eius eveniet quo voluptatibus."
-        };
+    export default {
+        props: ['pageTitle', 'contentTitle'],
+        data() {
+            return {
+                isCollapsed: true,
+                shortText: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum dicta molestiae possimus incidunt! Omnis, a! Est eum, eaque, expedita, perferendis veritatis dolor maiores sunt perspiciatis ratione officia consectetur aut?",
+                longText: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum dicta molestiae possimus incidunt! Omnis, a! Est eum, eaque, expedita, perferendis veritatis dolor maiores sunt perspiciatis ratione officia consectetur aut? Velit, nulla! Modi recusandae odit fugiat accusantium molestiae beatae non voluptate maxime adipisci iusto ad sapiente provident, asperiores rerum quidem obcaecati. Suscipit voluptatum possimus laboriosam, asperiores tenetur sit distinctio. Porro quasi autem temporibus aspernatur non ut excepturi officia, odit pariatur dolorem consequuntur, similique molestias necessitatibus voluptatibus id odio natus. Incidunt nesciunt repellat voluptates ipsum accusamus. Sint molestiae voluptate voluptatum dignissimos odit tempore officia ipsam? Sunt, est similique? Eius eveniet quo voluptatibus."
+            };
+        }
     }
-}
 </script>
 
 <style>
     p {
         color: #475467;
     }
+
     .back-btn {
         background-image: linear-gradient(to right, #EE269D, #9743A6);
         background-clip: padding-box;
@@ -436,7 +482,7 @@ export default {
         margin: 0px !important;
         box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
     }
-    
+
     .breadcrumb-item.active {
         background-image: linear-gradient(to right, #EE269D, #9743A6);
         background-clip: text;
@@ -524,7 +570,7 @@ export default {
     .hover-effect:hover .img-share-hover {
         z-index: 2;
     }
-    
+
     .img-share {
         padding: 5px;
         filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.2));
