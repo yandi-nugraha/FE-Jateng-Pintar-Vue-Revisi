@@ -45,12 +45,13 @@
 
             <hr>
 
-            <div class="d-flex flex-wrap align-items-center py-2">
-                <div class="col-md-2">
+            <!-- <div class="d-flex flex-wrap align-items-center py-2"> -->
+            <div class="row align-items-center py-2">
+                <div class="col-1">
                     <img src="../assets/profile.svg"
                         style="padding: 3.5px; background-color: white; box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%;">
                 </div>
-                <div class="col-md-5 name">
+                <div class="col name">
                     <h3 style="margin-bottom: 0px !important">Wisma Nantha</h3>
                     <p class="text-secondary" style="margin-bottom: 0px !important">1 Materi, Dilihat 99.999.999.999 kali, Diupload 17-11-2022 10:33:55</p>
                     <div class="d-flex align-items-center">
@@ -62,7 +63,7 @@
                         <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col">
                     <div class="d-flex align-items-center">
                         <div class="d-flex align-items-center me-3 share-button">
                             <h6 class="my-0" style="padding-left: 5px !important; padding-right: 5px !important;">Bagikan dengan yang lain</h6>
@@ -85,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col">
                     <button class="btn btn-danger" style="border: none; padding: 5px; background-image: linear-gradient(to right, #EE269D, #9743A6); background-clip: padding-box;"><i class="bi bi-plus-circle me-2"></i>Berlangganan</button>
                 </div>
             </div>
