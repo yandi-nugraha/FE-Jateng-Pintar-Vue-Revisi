@@ -1,9 +1,13 @@
 <template>
     <div class="container">
         <div class="d-flex flex-row align-items-center mt-5">
-            <div class="back-btn d-flex justify-content-center align-items-center">
+            <router-link to="/list-sumber-belajar">
+                <button class="back-btn-new"><i class="bi bi-arrow-left-short text-white" style="font-size: 35px;"></i></button>
+            </router-link>
+
+            <!-- <div class="back-btn d-flex justify-content-center">
                 <router-link to="/list-sumber-belajar"><i class="bi bi-arrow-left-short"></i></router-link>
-            </div>
+            </div> -->
             <div class="ms-3">
                 <ol class="breadcrumb rounded-pill">
                     <li class="breadcrumb-item">
@@ -19,7 +23,7 @@
         </div>
 
         <div class="wrapper">
-            <video id="player" playsinline controls data-poster="assets/thumb.jpeg" style="width: 100%; height: 450px;"
+            <video id="player" playsinline controls data-poster="assets/thumb.jpeg" style="width: 100%; height: 500px;"
                 class="object-fit-cover border rounded">
                 <source src="../assets/video-demo.mp4" type="video/mp4" />
             </video>
@@ -171,22 +175,69 @@
             <hr style="margin-top: 24px;">
 
             <div class="d-flex flex-row flex-wrap mt-3 mb-4 mx-auto">
-                <button type="button" class="btn1 btn py-2 me-3"><i class="bi bi-download me-2"></i>Download
+                <!-- <i class="bi bi-download me-2"></i> -->
+                <button type="button" class="btn1 btn py-2 me-3" style="font-weight: bold;"><img src="../assets/download-white.svg" class="me-2">Download
                     Materi</button>
-                <button type="button" class="btn2 btn py-2 me-3"><i
-                        class="fa-solid fa-paperclip fa-sm me-2"></i>Naskah</button>
-                <button type="button" class="btn2 btn py-2"><i class="bi bi-chat-left me-2"></i>Lapor</button>
+                <button type="button" class="btn2 btn py-2 me-3" style="font-weight: bold;"><img src="../assets/paperclip-black.svg" class="me-2">Naskah</button>
+                <button type="button" class="btn2 btn py-2" style="font-weight: bold;"><img src="../assets/lapor.svg" class="me-2">Lapor</button>
             </div>
             <div>
-                <form class="d-flex flex-column">
+                <form class="d-flex flex-column" @submit.prevent="addComment">
                     <label for="comment" class="comment-label mb-2">Komentar</label>
-                    <textarea v-model="text" @input="limitCharacters" class="comment" name="comment" id="" cols="30" rows="10"></textarea>
+                    <textarea v-model="newComment" @input="limitCharacters" @keydown.enter="addComment" class="comment" name="comment" id="" cols="30" rows="10"></textarea>
                     <p class="comment-hint">Maksimal 200 karakter</p>
+                    <!-- temp -->
+                    <!-- <button type="submit">Kirim (Sementara)</button> -->
+                    <!-- temp -->
                 </form>
             </div>
             <div class="scrollview">
+                <!-- Komentar Dinamis -->
+                <div v-for="comment in comments" :key="comment.id">
+                    <div class="d-flex flex-row py-2">
+                        <div class="col-1">
+                            <img src="../assets/profile.svg" style="border-radius: 50%;">
+                            <img src="../assets/online.svg" class="online-avatar">
+                        </div>
+                        <div class="col name ms-3">
+                            <p class="commenter-name mb-2">{{ comment.name }}</p>
+                            <p class="commenter-coment">{{ comment.content }}</p>
+                            <button class="balas-btn shadow-sm" @click="replyToComment(comment.id)"><img src="../assets/arrow-down-right.svg" class="me-3" style="height: 16px;">Balas</button>
+
+                            <!-- Menampilkan balasan komentar -->
+                            <div v-for="reply in comment.replies" :key="reply.id">
+                                <hr>
+                                <div class="d-flex flex-row py-2">
+                                    <div class="col-1">
+                                        <img src="../assets/profile.svg" style="border-radius: 50%;">
+                                        <img src="../assets/online.svg" class="online-avatar">
+                                    </div>
+                                    <div class="col name ms-3">
+                                        <p class="commenter-name mb-2">{{ reply.name }}</p>
+                                        <p class="commenter-coment">{{ reply.content }}</p>
+                                        
+                                        <button class="balas-btn shadow-sm"><img src="../assets/arrow-down-right.svg" class="me-3" style="height: 16px;">Balas</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Form untuk menambah balasan komentar -->
+                            <form v-if="comment.replying" @submit.prevent="addReply(comment)" class="mt-2">
+                                <div class="d-flex flex-column">
+                                    <label for="comment" class="comment-label mb-2">Komentar</label>
+                                    <textarea v-model="comment.replyContent" @input="limitCharacters" class="comment" name="comment" id="" cols="30" rows="10"></textarea>
+                                    <p class="comment-hint">Maksimal 200 karakter</p>
+                                </div>
+
+                                <button type="submit" class="align-items-center" style="background: #7F56D9; padding: 8px 14px; border: none; color: white; border-radius: 8px;">Kirim <img src="../assets/arrow-right-white.svg" class="ms-2"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
                 <!-- Komentar 1 -->
-                <div class="d-flex flex-row py-2">
+                <!-- <div class="d-flex flex-row py-2">
                     <div>
                         <img src="../assets/profile.svg" style="border-radius: 50%;">
                         <img src="../assets/online.svg" class="online-avatar">
@@ -196,7 +247,7 @@
                         <p class="commenter-coment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
                             ipsa aut et earum repellendus nihil recusandae mollitia ea porro numquam suscipit dolor quam
                             aliquam ex voluptate tempora, in pariatur deleniti?</p>
-                        <button @click="isCommentarOneShow = !isCommentarOneShow" style="background: white; border: 2px solid; border-color: #D0D5DD; border-radius: 8px; padding: 8px 20px; font-weight: bold; color: #344054;"><img src="../assets/arrow-down-right.svg" class="me-3" style="height: 16px;">Balas</button>
+                        <button class="balas-btn shadow-sm" @click="isCommentarOneShow = !isCommentarOneShow"><img src="../assets/arrow-down-right.svg" class="me-3" style="height: 16px;">Balas</button>
                         <div v-if="isCommentarOneShow">
                             <hr>
                             <form>
@@ -211,35 +262,7 @@
                         </div>
                     </div>
                 </div>
-                <hr>
-                
-                <!-- Komentar 2 -->
-                <div class="d-flex flex-row py-2">
-                    <div>
-                        <img src="../assets/profile.svg" style="border-radius: 50%;">
-                        <img src="../assets/online.svg" class="online-avatar">
-                    </div>
-                    <div class="name ms-3">
-                        <p class="commenter-name mb-2">Olivia Rhye</p>
-                        <p class="commenter-coment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
-                            ipsa aut et earum repellendus nihil recusandae mollitia ea porro numquam suscipit dolor quam
-                            aliquam ex voluptate tempora, in pariatur deleniti?</p>
-                        <button @click="isCommentarTwoShow = !isCommentarTwoShow" style="background: white; border: 2px solid; border-color: #D0D5DD; border-radius: 8px; padding: 8px 20px; font-weight: bold; color: #344054;"><img src="../assets/arrow-down-right.svg" class="me-3" style="height: 16px;">Balas</button>
-                        <div v-if="isCommentarTwoShow">
-                            <hr>
-                            <form>
-                                <div class="d-flex flex-column">
-                                    <label for="comment" class="comment-label mb-2">Komentar</label>
-                                    <textarea v-model="text" @input="limitCharacters" class="comment" name="comment" id="" cols="30" rows="10"></textarea>
-                                    <p class="comment-hint">Maksimal 200 karakter</p>
-                                </div>
-
-                                <button class="align-items-center" style="background: #7F56D9; padding: 8px 14px; border: none; color: white; border-radius: 8px;">Kirim <img src="../assets/arrow-right-white.svg" class="ms-2"></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <hr>
+                <hr> -->
             </div>
         </div>
 
@@ -487,6 +510,12 @@
                 isCommentarTwoShow: false,
                 text: '',
                 maxLength: 200,
+
+                newComment: '',
+                comments: [
+                    { id: 1, name: 'Olivia Rhyne', content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ipsa aut et earum repellendus nihil recusandae mollitia ea porro numquam suscipit dolor quam aliquam ex voluptate tempora, in pariatur deleniti?', replying: false, replyContent: '', replies: [] },
+                    { id: 2, name: 'Badrun', content: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.', replying: false, replyContent: '', replies: [] },
+                ],
             };
         },
         methods: {
@@ -494,6 +523,39 @@
                 if (this.text.length > this.maxLength) {
                     this.text = this.text.substring(0, this.maxLength);
                 }
+            },
+
+            addComment() {
+                if (this.newComment.trim() !== '') {
+                    const newComment = {
+                        id: Date.now(),
+                        name: 'Olivia Rhyne',
+                        content: this.newComment,
+                        replying: false,
+                        replyContent: '',
+                        replies: [],
+                    };
+
+                    this.comments.push(newComment);
+                    this.newComment = '';
+                }
+            },
+            replyToComment(commentId) {
+                const comment = this.comments.find(c => c.id === commentId);
+                if (comment) {
+                    comment.replying = true;
+                }
+            },
+            addReply(comment) {
+                const newReply = {
+                    id: Date.now(),
+                    name: 'Olivia Rhyne',
+                    content: comment.replyContent
+                };
+
+                comment.replies.push(newReply);
+                comment.replying = false;
+                comment.replyContent = '';
             }
         }
     }
@@ -511,8 +573,8 @@
         height: 55px;
         font-size: 34px;
         border-radius: 50%;
-        border: 3px solid;
-        border-color: #9743A6;
+        border: 2px solid;
+        border-color: rgba(278, 38, 157, 0.3);
     }
 
     .bi-arrow-left-short {
@@ -521,7 +583,7 @@
 
     .breadcrumb {
         background-color: white;
-        padding: 5px 15px;
+        padding: 8px 16px;
         margin: 0px !important;
         box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
     }
@@ -605,7 +667,7 @@
 
     .img-share-hover {
         padding: 5px;
-        filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
         position: absolute;
         z-index: -1;
     }
@@ -616,7 +678,7 @@
 
     .img-share {
         padding: 5px;
-        filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.2));
+        /* filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.2)); */
     }
 
     .share-button {
@@ -722,5 +784,25 @@
         border: 2px solid transparent;
         background-clip: padding-box, border-box;
         background-origin: padding-box, border-box;
+    }
+
+    .back-btn-new {
+        width: 60px;
+        height: 60px;
+        border-radius: 1000px;
+        background: linear-gradient(130deg, rgba(238, 54, 157, 1) 0%, rgba(151, 67, 166, 1) 75%), linear-gradient(135deg, rgba(253, 103, 188, 0.8) 0%, rgba(151, 67, 166, 0.8) 100%);
+        border: 2px solid transparent;
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+    }
+
+    .balas-btn {
+        background: white;
+        border: 1.5px solid;
+        border-color: #D0D5DD;
+        border-radius: 8px;
+        padding: 8px 20px;
+        font-weight: bold;
+        color: #344054;
     }
 </style>
