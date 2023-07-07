@@ -467,7 +467,10 @@
             </ul>
         </nav> -->
 
-        <!-- test -->
+        <!-- Button Carousel -->
+        <button class="carousel-btn"><i class="bi bi-arrow-left-short fs-2"></i></button>
+        <button class="carousel-btn"><i class="bi bi-arrow-right-short text-white fs-2"></i></button>
+        <!-- CSS di bawah -->
 
     </div>
 </template>
@@ -709,5 +712,15 @@
     .hr-detail {
         margin-top: 8px;
         margin-bottom: 8px;
+    }
+
+    .carousel-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 1000px;
+        background: linear-gradient(0deg, rgba(49, 48, 54, 0.5) 0%, rgba(49, 48, 54, 0.5) 100%), linear-gradient(200deg, rgba(121, 117, 131, 0.5) 0%, rgba(54, 53, 103, 0.5) 100%);
+        border: 2px solid transparent;
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
     }
 </style>
