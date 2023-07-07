@@ -223,6 +223,7 @@
 
                             <!-- Form untuk menambah balasan komentar -->
                             <form v-if="comment.replying" @submit.prevent="addReply(comment)" class="mt-2">
+                                <hr>
                                 <div class="d-flex flex-column">
                                     <label for="comment" class="comment-label mb-2">Komentar</label>
                                     <textarea v-model="comment.replyContent" @input="limitCharacters" class="comment" name="comment" id="" cols="30" rows="10"></textarea>
@@ -236,7 +237,7 @@
                     <hr>
                 </div>
 
-                <!-- Komentar 1 -->
+                <!-- Komentar statis -->
                 <!-- <div class="d-flex flex-row py-2">
                     <div>
                         <img src="../assets/profile.svg" style="border-radius: 50%;">
@@ -462,7 +463,7 @@
                         <hr class="solid">
                         <router-link to="/detail-sumber-belajar" class="mr-2 mb-3 btn-edit text-light">
                             <div class="btn-detail">
-                                <span class="btn-detail-teks">Lihat Sumber Belajar</span>
+                                <span class="btn-detail-teks">Lihat {{ pageTitle }}</span>
                                 <img src="../assets/arrow-up-right.svg" alt="">
                             </div>
                         </router-link>
@@ -717,7 +718,8 @@
         height: 124px;
         overflow: auto;
         transition: border-color 0.3s ease;
-        padding: 10px;
+        resize: none;
+        padding: 12px;
         margin-bottom: 6px;
     }
 
