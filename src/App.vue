@@ -67,6 +67,12 @@
         background-size: cover;
     }
 
+    body.sumber-belajar {
+        background-image: url("assets/Background-sumber-belajar.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     body.list-sumber-belajar {
         background-image: url("assets/Background-list-sumber-belajar.svg");
         background-repeat: no-repeat;
