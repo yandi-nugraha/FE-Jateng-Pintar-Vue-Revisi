@@ -29,6 +29,7 @@
         </div>
     </nav>
     <router-view />
+    <div><img :src="footer" style="width: 100%; height: auto;" alt=""></div>
 
 </template>
 
@@ -79,9 +80,6 @@
     }
 
     #app {
-        /* background-image: url("assets/Background-home.svg");
-        background-repeat: no-repeat;
-        background-size: cover; */
         font-family: 'Inter', sans-serif;
     }
 
@@ -100,18 +98,6 @@
         background-clip: padding-box, border-box;
         background-origin: padding-box, border-box;
     }
-
-    /* .nav-teks::before {
-        border-radius: 1000px;
-        content: '';
-        background-image: linear-gradient(rgba(121, 117, 131, 1), rgba(54, 53, 103, 1));
-        top: -10px;
-        left: -10px;
-        bottom: -10px;
-        right: -10px;
-        position: absolute;
-        z-index: -1;
-    } */
 
     .nav-link {
         padding: 16px 36px !important;
