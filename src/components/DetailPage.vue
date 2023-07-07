@@ -180,11 +180,12 @@
             <div>
                 <form class="d-flex flex-column">
                     <label for="comment" class="comment-label mb-2">Komentar</label>
-                    <textarea class="comment" name="comment" id="" cols="30" rows="10"></textarea>
+                    <textarea v-model="text" @input="limitCharacters" class="comment" name="comment" id="" cols="30" rows="10"></textarea>
                     <p class="comment-hint">Maksimal 200 karakter</p>
                 </form>
             </div>
             <div class="scrollview">
+                <!-- Komentar 1 -->
                 <div class="d-flex flex-row py-2">
                     <div>
                         <img src="../assets/profile.svg" style="border-radius: 50%;">
@@ -195,9 +196,24 @@
                         <p class="commenter-coment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
                             ipsa aut et earum repellendus nihil recusandae mollitia ea porro numquam suscipit dolor quam
                             aliquam ex voluptate tempora, in pariatur deleniti?</p>
-                        <button style="background: white; border: 2px solid; border-color: gray; border-radius: 6px; padding: 8px 20px;"><img src="../assets/arrow-down-right.svg">Balas</button>
+                        <button @click="isCommentarOneShow = !isCommentarOneShow" style="background: white; border: 2px solid; border-color: #D0D5DD; border-radius: 8px; padding: 8px 20px; font-weight: bold; color: #344054;"><img src="../assets/arrow-down-right.svg" class="me-3" style="height: 16px;">Balas</button>
+                        <div v-if="isCommentarOneShow">
+                            <hr>
+                            <form>
+                                <div class="d-flex flex-column">
+                                    <label for="comment" class="comment-label mb-2">Komentar</label>
+                                    <textarea v-model="text" @input="limitCharacters" class="comment" name="comment" id="" cols="30" rows="10"></textarea>
+                                    <p class="comment-hint">Maksimal 200 karakter</p>
+                                </div>
+
+                                <button class="align-items-center" style="background: #7F56D9; padding: 8px 14px; border: none; color: white; border-radius: 8px;">Kirim <img src="../assets/arrow-right-white.svg" class="ms-2"></button>
+                            </form>
+                        </div>
                     </div>
                 </div>
+                <hr>
+                
+                <!-- Komentar 2 -->
                 <div class="d-flex flex-row py-2">
                     <div>
                         <img src="../assets/profile.svg" style="border-radius: 50%;">
@@ -205,12 +221,25 @@
                     </div>
                     <div class="name ms-3">
                         <p class="commenter-name mb-2">Olivia Rhye</p>
-                        <p class="commenter-job mb-2">Designer AR</p>
                         <p class="commenter-coment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
                             ipsa aut et earum repellendus nihil recusandae mollitia ea porro numquam suscipit dolor quam
                             aliquam ex voluptate tempora, in pariatur deleniti?</p>
+                        <button @click="isCommentarTwoShow = !isCommentarTwoShow" style="background: white; border: 2px solid; border-color: #D0D5DD; border-radius: 8px; padding: 8px 20px; font-weight: bold; color: #344054;"><img src="../assets/arrow-down-right.svg" class="me-3" style="height: 16px;">Balas</button>
+                        <div v-if="isCommentarTwoShow">
+                            <hr>
+                            <form>
+                                <div class="d-flex flex-column">
+                                    <label for="comment" class="comment-label mb-2">Komentar</label>
+                                    <textarea v-model="text" @input="limitCharacters" class="comment" name="comment" id="" cols="30" rows="10"></textarea>
+                                    <p class="comment-hint">Maksimal 200 karakter</p>
+                                </div>
+
+                                <button class="align-items-center" style="background: #7F56D9; padding: 8px 14px; border: none; color: white; border-radius: 8px;">Kirim <img src="../assets/arrow-right-white.svg" class="ms-2"></button>
+                            </form>
+                        </div>
                     </div>
                 </div>
+                <hr>
             </div>
         </div>
 
@@ -450,8 +479,19 @@
             return {
                 isCollapsed: true,
                 shortText: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum dicta molestiae possimus incidunt! Omnis, a! Est eum, eaque, expedita, perferendis veritatis dolor maiores sunt perspiciatis ratione officia consectetur aut?",
-                longText: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum dicta molestiae possimus incidunt! Omnis, a! Est eum, eaque, expedita, perferendis veritatis dolor maiores sunt perspiciatis ratione officia consectetur aut? Velit, nulla! Modi recusandae odit fugiat accusantium molestiae beatae non voluptate maxime adipisci iusto ad sapiente provident, asperiores rerum quidem obcaecati. Suscipit voluptatum possimus laboriosam, asperiores tenetur sit distinctio. Porro quasi autem temporibus aspernatur non ut excepturi officia, odit pariatur dolorem consequuntur, similique molestias necessitatibus voluptatibus id odio natus. Incidunt nesciunt repellat voluptates ipsum accusamus. Sint molestiae voluptate voluptatum dignissimos odit tempore officia ipsam? Sunt, est similique? Eius eveniet quo voluptatibus."
+                longText: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum dicta molestiae possimus incidunt! Omnis, a! Est eum, eaque, expedita, perferendis veritatis dolor maiores sunt perspiciatis ratione officia consectetur aut? Velit, nulla! Modi recusandae odit fugiat accusantium molestiae beatae non voluptate maxime adipisci iusto ad sapiente provident, asperiores rerum quidem obcaecati. Suscipit voluptatum possimus laboriosam, asperiores tenetur sit distinctio. Porro quasi autem temporibus aspernatur non ut excepturi officia, odit pariatur dolorem consequuntur, similique molestias necessitatibus voluptatibus id odio natus. Incidunt nesciunt repellat voluptates ipsum accusamus. Sint molestiae voluptate voluptatum dignissimos odit tempore officia ipsam? Sunt, est similique? Eius eveniet quo voluptatibus.",
+                isCommentarOneShow: false,
+                isCommentarTwoShow: false,
+                text: '',
+                maxLength: 200,
             };
+        },
+        methods: {
+            limitCharacters() {
+                if (this.text.length > this.maxLength) {
+                    this.text = this.text.substring(0, this.maxLength);
+                }
+            }
         }
     }
 </script>
