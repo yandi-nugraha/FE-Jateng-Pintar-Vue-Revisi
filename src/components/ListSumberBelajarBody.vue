@@ -404,6 +404,13 @@
 </template>
 
 <style scoped>
+.navbar-brand {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
 .filter {
     border-radius: 16px;
     background: linear-gradient(136deg, #EE269D 0%, #9743A6 100%), #FFF;
