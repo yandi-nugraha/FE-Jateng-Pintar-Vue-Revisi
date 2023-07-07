@@ -51,79 +51,6 @@
 
     <section class="all-menu">
       <div class="container">
-        <!-- <div class="row align-items-center card-menu">
-          <div class="col-lg-3 ps-0">
-            <h2 class="menu-title">Jelajahi Jateng Pintar</h2>
-            <p class="menu-desc">Temukan beragam sumber belajar yang bermanfaat untuk meningkatkan pemahaman siswa
-              di
-              website kami.</p>
-          </div>
-          <div class="col-lg-2 ps-3">
-            <div class="d-flex">
-              <div class="vertical-line me-3" style="height: 300px;"></div>
-              <div class="d-flex flex-column">
-                <img src="../assets/Sumber-Belajar_Normal.svg" alt="..." />
-                <div class="d-flex align-items-center">
-                  <img src="../assets/Books.svg" alt="..." />
-                  <h5 class="menu-label mt-0 ps-2">Sumber Belajar</h5>
-                </div>
-                <router-link to="/sumber-belajar" class="btn btn-primary rounded-pill mt-2">
-                  Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
-                </router-link>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-lg-2 ps-3">
-            <div class="d-flex">
-              <div class="vertical-line" style="height: 45px;"></div>
-              <div class="d-flex flex-column">
-                <img src="../assets/Sumber-Belajar_Normal.svg" alt="..." />
-                <div class="d-flex align-items-center">
-                  <img src="../assets/Books.svg" alt="..." />
-                  <h5 class="card-title mt-0 ps-2">Sumber Belajar</h5>
-                </div>
-                <router-link to="/sumber-belajar" class="btn btn-next rounded-pill mt-2">
-                  Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
-                </router-link>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-lg-2 ps-3">
-            <div class="d-flex">
-              <div class="vertical-line" style="height: 45px;"></div>
-              <div class="d-flex flex-column">
-                <img src="../assets/Sumber-Belajar_Normal.svg" alt="..." />
-                <div class="d-flex align-items-center">
-                  <img src="../assets/Books.svg" alt="..." />
-                  <h5 class="card-title mt-0 ps-2">Sumber Belajar</h5>
-                </div>
-                <router-link to="/sumber-belajar" class="btn btn-primary rounded-pill mt-2">
-                  Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
-                </router-link>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-lg-2 ps-3">
-            <div class="d-flex">
-              <div class="vertical-line" style="height: 45px;"></div>
-              <div class="d-flex flex-column">
-                <img src="../assets/Sumber-Belajar_Normal.svg" alt="..." />
-                <div class="d-flex align-items-center">
-                  <img src="../assets/Books.svg" alt="..." />
-                  <h5 class="card-title mt-0 ps-2">Sumber Belajar</h5>
-                </div>
-                <router-link to="/sumber-belajar" class="btn btn-primary rounded-pill mt-2">
-                  Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
-                </router-link>
-              </div>
-            </div>
-          </div>
-        </div> -->
         <div class="card-menu">
           <div class="disable-card justify-content-center align-items-center">
             <h2 class="menu-title">Jelajahi Jateng Pintar</h2>
@@ -131,50 +58,62 @@
               di
               website kami.</p>
           </div>
-          <div class="enable-card">
-            <div class="vertical-line me-2" style="height: 300px;"></div>
-            <div class="d-flex flex-column">
-              <img src="../assets/Sumber-Belajar_Normal.svg" alt="..." />
-              <div class="d-flex align-items-center">
-                <img src="../assets/Books.svg" alt="..." />
-                <h5 class="menu-label mt-0 ps-2">Sumber Belajar</h5>
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="vertical-line me-2" style="height: 300px;"></div>
+              <div class="d-flex flex-column">
+                <img src="../assets/Sumber-Belajar_Normal.svg" alt="..." />
+                <div class="row align-items-center">
+                <div class="col-2">
+                  <img src="../assets/Books.svg" alt="..." />
+                </div>
+                <div class="col-10 ">
+                  <h5 class="menu-label my-0 ps-2 ">Sumber Belajar</h5>
+                </div>
               </div>
-              <router-link to="/sumber-belajar" class="btn btn-primary rounded-pill mt-2">
-                Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
-              </router-link>
+                <router-link to="/sumber-belajar" class="btn btn-primary rounded-pill mt-2">
+                  Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
+                </router-link>
+              </div>
             </div>
-            <div class="vertical-line" style="height: 300px;"></div>
-            <div class="d-flex flex-column">
-              <img src="../assets/Sumber-Belajar_Normal.svg" alt="..." />
-              <div class="d-flex align-items-center">
-                <img src="../assets/Books.svg" alt="..." />
-                <h5 class="menu-label mt-0 ps-2">Sumber Belajar</h5>
+            <div class="col-lg-3">
+              <div class="vertical-line me-2" style="height: 300px;"></div>
+              <div class="d-flex flex-column">
+                <img src="../assets/Karya_Siswa_Normal.svg" alt="..." />
+                <div class="d-flex align-items-center">
+                  <img src="../assets/Books.svg" alt="..." />
+                  <h5 class="menu-label my-0 ps-2">Karya Siswa</h5>
+                </div>
+                <router-link to="/sumber-belajar" class="btn btn-primary rounded-pill mt-2">
+                  Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
+                </router-link>
               </div>
-              <router-link to="/sumber-belajar" class="btn btn-primary rounded-pill mt-2">
-                Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
-              </router-link>
             </div>
-            <div class="vertical-line" style="height: 300px;"></div>
-            <div class="d-flex flex-column">
-              <img src="../assets/Sumber-Belajar_Normal.svg" alt="..." />
-              <div class="d-flex align-items-center">
-                <img src="../assets/Books.svg" alt="..." />
-                <h5 class="menu-label mt-0 ps-2">Sumber Belajar</h5>
+            <div class="col-lg-3">
+              <div class="vertical-line me-2" style="height: 300px;"></div>
+              <div class="d-flex flex-column">
+                <img src="../assets/Siswa_jateng_Pintar_Normal.svg" alt="..." />
+                <div class="d-flex align-items-center">
+                  <img src="../assets/Books.svg" alt="..." />
+                  <h5 class="menu-label my-0 ps-2">Siswa Jateng Pintar</h5>
+                </div>
+                <router-link to="/sumber-belajar" class="btn btn-primary rounded-pill mt-2">
+                  Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
+                </router-link>
               </div>
-              <router-link to="/sumber-belajar" class="btn btn-primary rounded-pill mt-2">
-                Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
-              </router-link>
             </div>
-            <div class="vertical-line" style="height: 300px;"></div>
-            <div class="d-flex flex-column">
-              <img src="../assets/Sumber-Belajar_Normal.svg" alt="..." />
-              <div class="d-flex align-items-center">
-                <img src="../assets/Books.svg" alt="..." />
-                <h5 class="menu-label mt-0 ps-2">Sumber Belajar</h5>
+            <div class="col-lg-3">
+              <div class="vertical-line me-2" style="height: 300px;"></div>
+              <div class="d-flex flex-column">
+                <img src="../assets/Kontributor_Normal.svg" alt="..." />
+                <div class="d-flex align-items-center">
+                  <img src="../assets/Books.svg" alt="..." />
+                  <h5 class="menu-label my-0 ps-2">Kontributor</h5>
+                </div>
+                <router-link to="/sumber-belajar" class="btn btn-primary rounded-pill mt-2">
+                  Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
+                </router-link>
               </div>
-              <router-link to="/sumber-belajar" class="btn btn-primary rounded-pill mt-2">
-                Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
-              </router-link>
             </div>
           </div>
         </div>
@@ -354,47 +293,39 @@
     border-color: #a0a5af !important;
   }
 
-.button-group .btn-primary {
-  width: 240px;
-  margin-top: 48px;
-  margin-left: 3.5px;
-  margin-right: 3.5px;
-  border-radius: 1000px;
-  background: linear-gradient(
-      0deg,
-      rgba(49, 48, 54, 0.5) 0%,
-      rgba(49, 48, 54, 0.5) 100%
-    ),
-    linear-gradient(
-      200deg,
-      rgba(121, 117, 131, 0.5) 0%,
-      rgba(54, 53, 103, 0.5) 100%
-    );
-  border: 2px solid transparent;
-  background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box;
-}
+  .button-group .btn-primary {
+    width: 240px;
+    margin-top: 48px;
+    margin-left: 3.5px;
+    margin-right: 3.5px;
+    border-radius: 1000px;
+    background: linear-gradient(0deg,
+        rgba(49, 48, 54, 0.5) 0%,
+        rgba(49, 48, 54, 0.5) 100%),
+      linear-gradient(200deg,
+        rgba(121, 117, 131, 0.5) 0%,
+        rgba(54, 53, 103, 0.5) 100%);
+    border: 2px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+  }
 
-.button-group .btn-primary:visited {
-  border-radius: 1000px;
-  background: linear-gradient(
-      0deg,
-      rgba(49, 48, 54, 0.5) 0%,
-      rgba(49, 48, 54, 0.5) 100%
-    ),
-    linear-gradient(
-      200deg,
-      rgba(121, 117, 131, 0.5) 0%,
-      rgba(54, 53, 103, 0.5) 100%
-    );
-  border: 2px solid transparent;
-  background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box;
-  width: 240px;
-  margin-top: 48px;
-  margin-left: 3.5px;
-  margin-right: 3.5px;
-}
+  .button-group .btn-primary:visited {
+    border-radius: 1000px;
+    background: linear-gradient(0deg,
+        rgba(49, 48, 54, 0.5) 0%,
+        rgba(49, 48, 54, 0.5) 100%),
+      linear-gradient(200deg,
+        rgba(121, 117, 131, 0.5) 0%,
+        rgba(54, 53, 103, 0.5) 100%);
+    border: 2px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    width: 240px;
+    margin-top: 48px;
+    margin-left: 3.5px;
+    margin-right: 3.5px;
+  }
 
   .button-group .btn-primary:hover {
     background-image: linear-gradient(to bottom right, #ee269d, #9743a6);
@@ -488,10 +419,10 @@
   }
 
   .menu-label {
-    color: #2F2E41;
-    font-size: 16px;
+    color: #2F2E41 !important;
+    font-size: 16px !important;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 700 !important;
   }
 
   div.vertical-line {
@@ -526,8 +457,8 @@
   }
 
   @media (max-width: 992px) {
-        .vertical-line {
-          display: none;
-        }
+    .vertical-line {
+      display: none;
+    }
   }
 </style>
