@@ -192,10 +192,10 @@
                     </div>
                     <div class="name ms-3">
                         <p class="commenter-name mb-2">Olivia Rhye</p>
-                        <p class="commenter-job mb-2">Designer AR</p>
                         <p class="commenter-coment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
                             ipsa aut et earum repellendus nihil recusandae mollitia ea porro numquam suscipit dolor quam
                             aliquam ex voluptate tempora, in pariatur deleniti?</p>
+                        <button style="background: white; border: 2px solid; border-color: gray; border-radius: 6px; padding: 8px 20px;"><img src="../assets/arrow-down-right.svg">Balas</button>
                     </div>
                 </div>
                 <div class="d-flex flex-row py-2">
@@ -456,7 +456,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     p {
         color: #475467;
     }
