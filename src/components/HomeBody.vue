@@ -23,17 +23,19 @@
       <div class="slide-container">
         <div class="slide-content">
           <div class="card-wrapper">
-            <div class="card">
-              <div class="image-content">
-                <span class="overlay"></span>
-
-                <div class="card-image">
-                  <img
-                    src="../assets/icon-sumber-belajar-red.svg"
-                    alt=""
-                    class="card-img"
-                  />
-                </div>
+            <div class="card" style="width: 18rem">
+              <img src="../assets/office.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img src="../assets/office.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
               </div>
             </div>
           </div>
