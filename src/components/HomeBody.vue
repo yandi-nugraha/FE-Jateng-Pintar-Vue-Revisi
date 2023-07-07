@@ -19,29 +19,35 @@
       </div>
     </section>
 
-    <section class="slider-article">
-      <div class="slide-container">
+    <!-- <section class="slider-article">
+      <div class="slide-container swiper">
         <div class="slide-content">
-          <div class="card-wrapper">
-            <div class="card" style="width: 18rem">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide" style="width: 18rem">
               <img src="../assets/office.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
               </div>
             </div>
-            <div class="card" style="width: 18rem">
+            <div class="card swiper-slide" style="width: 18rem">
               <img src="../assets/office.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
+              </div>
+            </div>
+            <div class="card swiper-slide" style="width: 18rem">
+              <img src="../assets/office.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
               </div>
             </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="all-menu">
       <div class="container">
@@ -226,8 +232,44 @@
         </div>
       </div>
     </section>
+
+    <section>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
   </div>
 </template>
+
+<script>
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+</script>
+
 <style>
 .text-section {
   color: white;
