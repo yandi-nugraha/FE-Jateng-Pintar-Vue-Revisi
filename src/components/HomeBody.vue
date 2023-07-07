@@ -524,4 +524,10 @@
     align-items: flex-end;
     gap: 24px;
   }
+
+  @media (max-width: 992px) {
+        .vertical-line {
+          display: none;
+        }
+  }
 </style>
