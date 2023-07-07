@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+    <nav class="navbar navbar-expand-lg sticky-top my-3" id="navbar">
         <div class="container">
             <router-link to="/"><img :src="navbarLogo" alt="Logo" /></router-link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -106,7 +106,7 @@
     }
 
     .nav-link {
-        padding: 16px 36px !important;
+        padding: 10px 36px !important;
         text-align: center;
     }
 
@@ -114,6 +114,7 @@
         border-radius: 1000px;
         background: #FFF;
         color: #EE269D !important;
+        font-weight: bold;
     }
 
     .sign-btn {
