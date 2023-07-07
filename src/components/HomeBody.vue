@@ -365,23 +365,41 @@ var swiper = new Swiper(".mySwiper", {
 }
 
 .button-group .btn-primary {
-  background: linear-gradient(
-      154deg,
-      rgba(121, 117, 131, 0.2) 0%,
-      rgba(54, 53, 103, 0.2) 100%
-    ),
-    rgba(49, 48, 54, 0.3);
-  backdrop-filter: blur(2px);
-  border: 6px solid transparent;
-  border-image: linear-gradient(to bottom right, #ee269d, #9743a6) 1;
   width: 240px;
   margin-top: 48px;
   margin-left: 3.5px;
   margin-right: 3.5px;
+  border-radius: 1000px;
+  background: linear-gradient(
+      0deg,
+      rgba(49, 48, 54, 0.5) 0%,
+      rgba(49, 48, 54, 0.5) 100%
+    ),
+    linear-gradient(
+      200deg,
+      rgba(121, 117, 131, 0.5) 0%,
+      rgba(54, 53, 103, 0.5) 100%
+    );
+  border: 2px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
 }
 
 .button-group .btn-primary:visited {
-  background-color: #667085;
+  border-radius: 1000px;
+  background: linear-gradient(
+      0deg,
+      rgba(49, 48, 54, 0.5) 0%,
+      rgba(49, 48, 54, 0.5) 100%
+    ),
+    linear-gradient(
+      200deg,
+      rgba(121, 117, 131, 0.5) 0%,
+      rgba(54, 53, 103, 0.5) 100%
+    );
+  border: 2px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
   width: 240px;
   margin-top: 48px;
   margin-left: 3.5px;
