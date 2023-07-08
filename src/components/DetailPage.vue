@@ -195,11 +195,11 @@
                 <!-- Komentar Dinamis -->
                 <div v-for="comment in comments" :key="comment.id">
                     <div class="d-flex flex-row py-2">
-                        <div class="col-1">
-                            <img src="../assets/profile.svg" style="border-radius: 50%;">
+                        <div class="col-auto me-3">
+                            <img src="../assets/profile.svg" style="border-radius: 50%; width: 40px;">
                             <img src="../assets/online.svg" class="online-avatar">
                         </div>
-                        <div class="col name ms-3">
+                        <div class="col name mt-1">
                             <p class="commenter-name mb-2">{{ comment.name }}</p>
                             <p class="commenter-coment">{{ comment.content }}</p>
                             <button class="balas-btn shadow-sm" @click="replyToComment(comment.id)"><img src="../assets/arrow-down-right.svg" class="me-3" style="height: 16px;">Balas</button>
@@ -208,11 +208,11 @@
                             <div v-for="reply in comment.replies" :key="reply.id">
                                 <hr>
                                 <div class="d-flex flex-row py-2">
-                                    <div class="col-1">
-                                        <img src="../assets/profile.svg" style="border-radius: 50%;">
+                                    <div class="col-auto me-3">
+                                        <img src="../assets/profile.svg" style="border-radius: 50%; width: 40px;">
                                         <img src="../assets/online.svg" class="online-avatar">
                                     </div>
-                                    <div class="col name ms-3">
+                                    <div class="col name mt-1">
                                         <p class="commenter-name mb-2">{{ reply.name }}</p>
                                         <p class="commenter-coment">{{ reply.content }}</p>
                                         
@@ -521,8 +521,8 @@
         },
         methods: {
             limitCharacters() {
-                if (this.text.length > this.maxLength) {
-                    this.text = this.text.substring(0, this.maxLength);
+                if (this.newComment.length > this.maxLength) {
+                    this.newComment = this.newComment.substring(0, this.maxLength);
                 }
             },
 
@@ -530,7 +530,7 @@
                 if (this.newComment.trim() !== '') {
                     const newComment = {
                         id: Date.now(),
-                        name: 'Olivia Rhyne',
+                        name: 'Mila Rich',
                         content: this.newComment,
                         replying: false,
                         replyContent: '',
@@ -550,7 +550,7 @@
             addReply(comment) {
                 const newReply = {
                     id: Date.now(),
-                    name: 'Olivia Rhyne',
+                    name: 'Aston Howard',
                     content: comment.replyContent
                 };
 
@@ -757,10 +757,11 @@
     }
 
     .online-avatar {
+        width: 14px;
         position: absolute;
         z-index: 2;
-        margin-left: -20px;
-        margin-top: 60px;
+        margin-left: -11px;
+        margin-top: 28px;
         padding: 1px;
         background-color: white;
         border-radius: 50%;
