@@ -52,6 +52,88 @@
 
             <!-- <div class="d-flex flex-wrap align-items-center py-2"> -->
             <div class="row align-items-center">
+                <div class="col-lg-auto col-md-auto col-12 align-items-center py-2">
+                    <div>
+                        <img src="../assets/profile.svg"
+                            style="padding: 3.5px; background-color: white; box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%;">
+                    </div>
+                </div>
+                <div class="col-lg col-md-12 align-items-center py-2">
+                    <div class="name">
+                        <h3 style="margin-bottom: 0px !important">Wisma Nantha</h3>
+                        <p class="text-secondary" style="margin-bottom: 0px !important">1 Materi, Dilihat 99.999.999.999
+                            kali, Diupload 17-11-2022 10:33:55</p>
+                        <div class="d-flex align-items-center">
+                            <h6 class="me-2 my-0">Rating materi :</h6>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i>
+                            </li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i>
+                            </li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i>
+                            </li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i>
+                            </li>
+                            <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto align-items-center py-2">
+                    <div class="d-flex align-items-center share-button px-2 py-1">
+                        <h6 class="my-0 me-3" style="font-weight: bold;">
+                            Bagikan dengan yang lain</h6>
+                        <div class="hover-effect">
+                            <div class="img-share-hover">
+                                <router-link to="/detail-sumber-belajar"><img src="../assets/FacebookLogoHover.svg">
+                                </router-link>
+                            </div>
+                            <div class="img-share">
+                                <router-link to="/detail-sumber-belajar"><img src="../assets/FacebookLogo.svg">
+                                </router-link>
+                            </div>
+                        </div>
+                        <div class="hover-effect">
+                            <div class="img-share-hover">
+                                <router-link to="/detail-sumber-belajar"><img
+                                        src="../assets/InstagramLogoHover.svg"></router-link>
+                            </div>
+                            <div class="img-share">
+                                <router-link to="/detail-sumber-belajar"><img src="../assets/InstagramLogo.svg">
+                                </router-link>
+                            </div>
+                        </div>
+                        <div class="hover-effect">
+                            <div class="img-share-hover">
+                                <router-link to="/detail-sumber-belajar"><img src="../assets/TwitterLogoHover.svg">
+                                </router-link>
+                            </div>
+                            <div class="img-share">
+                                <router-link to="/detail-sumber-belajar"><img src="../assets/TwitterLogo.svg">
+                                </router-link>
+                            </div>
+                        </div>
+                        <div class="hover-effect">
+                            <div class="img-share-hover">
+                                <router-link to="/detail-sumber-belajar"><img src="../assets/WhatsappLogoHover.svg">
+                                </router-link>
+                            </div>
+                            <div class="img-share">
+                                <router-link to="/detail-sumber-belajar"><img src="../assets/WhatsappLogo.svg">
+                                </router-link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto align-items-center py-2">
+                    <button class="btn btn-danger px-3 py-2"
+                        style="border: none; padding: 5px; background-image: linear-gradient(to right, #EE269D, #9743A6); background-clip: padding-box; font-weight: bold;"><i
+                            class="bi bi-plus-circle me-2"></i>Berlangganan</button>
+                </div>
+
+            </div>
+
+            <!-- Backup -->
+            <!-- <div class="row align-items-center">
                 <div class="col-lg-1 col-md-3 col-sm-12 align-items-center py-2">
                     <div>
                         <img src="../assets/profile.svg"
@@ -132,7 +214,8 @@
                             class="bi bi-plus-circle me-2"></i>Berlangganan</button>
                 </div>
 
-            </div>
+            </div> -->
+            <!-- Backup -->
 
             <hr class="mb-4">
 
@@ -174,12 +257,11 @@
 
             <hr style="margin-top: 24px;">
 
-            <div class="d-flex flex-row flex-wrap mt-3 mb-4 mx-auto">
+            <div class="row mt-3 mb-4 mx-auto">
                 <!-- <i class="bi bi-download me-2"></i> -->
-                <button type="button" class="btn1 btn py-2 me-3" style="font-weight: bold;"><img src="../assets/download-white.svg" class="me-2">Download
-                    Materi</button>
-                <button type="button" class="btn2 btn py-2 me-3" style="font-weight: bold;"><img src="../assets/paperclip-black.svg" class="me-2">Naskah</button>
-                <button type="button" class="btn2 btn py-2" style="font-weight: bold;"><img src="../assets/lapor.svg" class="me-2">Lapor</button>
+                <button type="button" class="btn1 btn col-lg-auto col-md-auto col-12 my-1 px-3 py-2 me-3" style="font-weight: bold;"><img src="../assets/download-white.svg" class="me-2">Download Materi</button>
+                <button type="button" class="btn2 btn col-lg-auto col-md-auto col my-1 px-3 py-2 me-3" style="font-weight: bold;"><img src="../assets/paperclip-black.svg" class="me-2">Naskah</button>
+                <button type="button" class="btn2 btn col-lg-auto col-md-auto col my-1 px-3 py-2" style="font-weight: bold;"><img src="../assets/lapor.svg" class="me-2">Lapor</button>
             </div>
             <div>
                 <form class="d-flex flex-column" @submit.prevent="addComment">
