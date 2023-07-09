@@ -49,6 +49,116 @@
       </div>
     </section> -->
 
+    <!-- temp all-menu -->
+    <!-- <section class="all-menu">
+      <div class="container px-4 py-5">
+        <div class="row align-items-center">
+          <div class="col-2 d-flex flex-column align-items-center">
+            <h2 class="menu-title">Jelajahi Jateng Pintar</h2>
+            <p class="menu-desc">Temukan beragam sumber belajar yang bermanfaat untuk meningkatkan pemahaman siswa
+              di
+              website kami.</p>
+          </div>
+
+          <div class="col-auto">
+            <div class="vertical-line col-auto" style="height: 250px;"></div>
+          </div>
+
+          
+          <div class="col ps-4" @mouseover="showHover1 = true" @mouseleave="showHover1 = false" v-if="!showHover1">
+            <div @mouseover="showHover1 = true" @mouseleave="showHover1 = false">
+              <div v-if="!showHover1" class="d-flex flex-column justify-content-center">
+                <img src="../assets/Sumber-Belajar_Normal.svg" style="margin-top: -40px; width: 170px;" />
+                <div class="d-flex flex-row align-items-center mt-3">
+                  <img src="../assets/Books.svg" style="height: 40px;" />
+                  <h5 style="font-size: 16px; font-weight: bold; margin-bottom: 0px !important; padding: 0px;" class="ms-2">Sumber Belajar</h5>
+                </div>
+                <router-link to="/sumber-belajar" class="mt-3" style="text-decoration: none; color: inherit; font-size: 14px;">
+                  lihat selengkapnya<i class="bi bi-chevron-right ms-2"></i>
+                </router-link>
+              </div>
+
+              <div v-else>
+                <img src="../assets/Sumber-Belajar_Hover.svg" style="margin-top: -40px; width: 217px;" />
+                <div class="d-flex flex-row align-items-center mt-3">
+                  <img src="../assets/Books.svg" style="height: 40px;" />
+                  <h5 style="font-size: 24px; font-weight: bold; margin-bottom: 0px !important; padding: 0px;" class="ms-2">Sumber Belajar</h5>
+                </div>
+                <router-link to="/sumber-belajar" class="mt-3" style="text-decoration: none; color: inherit; font-size: 16px;">
+                  lihat selengkapnya<i class="bi bi-chevron-right ms-2"></i>
+                </router-link>
+              </div>
+            </div>
+          </div>
+
+          <div class="col ps-3" @mouseover="showHover1 = true" @mouseleave="showHover1 = false" v-else-if="showHover1" style="background: gray;">
+            <div class="d-flex flex-column">
+              <img src="../assets/Sumber-Belajar_Hover.svg" style="margin-top: -40px; width: 217px;" />
+              <div class="d-flex flex-row align-items-center mt-3">
+                <img src="../assets/Books.svg" style="height: 40px;" />
+                <h5 style="font-size: 24px; font-weight: bold; margin-bottom: 0px !important; padding: 0px;" class="ms-2">Sumber Belajar</h5>
+              </div>
+              <router-link to="/sumber-belajar" class="mt-3" style="text-decoration: none; color: inherit; font-size: 16px;">
+                lihat selengkapnya<i class="bi bi-chevron-right ms-2"></i>
+              </router-link>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <div class="vertical-line col-auto" style="height: 250px;"></div>
+          </div>
+
+          <div class="col ps-4">
+            <div class="d-flex flex-column">
+              <img src="../assets/Karya_Siswa_Normal.svg" style="margin-top: -40px; width: 170px;" />
+              <div class="row align-items-center mt-3">
+                <img src="../assets/Books.svg" class="col-auto" />
+                <h5 style="font-size: 16px; font-weight: bold; margin-bottom: 0px !important; padding: 0px" class="col">Karya Siswa</h5>
+              </div>
+              <router-link to="/sumber-belajar" class="mt-3" style="text-decoration: none; color: inherit; font-size: 14px;">
+                lihat selengkapnya<i class="bi bi-chevron-right ms-2"></i>
+              </router-link>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <div class="vertical-line col-auto" style="height: 250px;"></div>
+          </div>
+
+          <div class="col ps-4">
+            <div class="d-flex flex-column">
+              <img src="../assets/Karya_Siswa_Normal.svg" style="margin-top: -40px; width: 170px;" />
+              <div class="row align-items-center mt-3">
+                <img src="../assets/Books.svg" class="col-auto" />
+                <h5 style="font-size: 16px; font-weight: bold; margin-bottom: 0px !important; padding: 0px" class="col">Siswa Jateng <br>Pintar</h5>
+              </div>
+              <router-link to="/sumber-belajar" class="mt-3" style="text-decoration: none; color: inherit; font-size: 14px;">
+                lihat selengkapnya<i class="bi bi-chevron-right ms-2"></i>
+              </router-link>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <div class="vertical-line col-auto" style="height: 250px;"></div>
+          </div>
+
+          <div class="col ps-4">
+            <div class="d-flex flex-column">
+              <img src="../assets/Karya_Siswa_Normal.svg" style="margin-top: -40px; width: 170px;" />
+              <div class="row align-items-center mt-3">
+                <img src="../assets/Books.svg" class="col-auto" />
+                <h5 style="font-size: 16px; font-weight: bold; margin-bottom: 0px !important; padding: 0px" class="col">Kontributor</h5>
+              </div>
+              <router-link to="/sumber-belajar" class="mt-3" style="text-decoration: none; color: inherit; font-size: 14px;">
+                lihat selengkapnya<i class="bi bi-chevron-right ms-2"></i>
+              </router-link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Card lama -->
     <section class="all-menu">
       <div class="container">
         <div class="card-menu">
@@ -119,6 +229,7 @@
         </div>
       </div>
     </section>
+    <!-- Card lama -->
 
     <section class="button-group">
       <div class="container">
@@ -184,6 +295,14 @@
 </template>
 
 <script>
+  export default {
+    data() {
+      return {
+        showHover1: false
+      };
+    }
+  };
+
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -217,16 +336,22 @@
     font-weight: 500;
   }
 
+  .all-menu .container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 0px 10px rgba(226, 226, 226, 1);
+  }
+
   .all-menu {
     margin-top: 57px;
   }
 
-  .all-menu h5 {
+  /* .all-menu h5 {
     font-size: 24px;
     color: #1d2939;
     margin-top: 16px;
     font-weight: 700;
-  }
+  } */
 
   .all-menu p {
     font-size: 16px;
@@ -409,6 +534,7 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
+    margin-bottom: 12px;
   }
 
   .menu-desc {
@@ -416,6 +542,9 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+    line-height: 1.2;
+    margin-top: 0px !important;
+    margin-bottom: 0px;
   }
 
   .menu-label {
@@ -426,7 +555,7 @@
   }
 
   div.vertical-line {
-    width: 1px;
+    width: 1.5px;
     background: linear-gradient(136deg, #EE269D 0%, #9743A6 100%);
     height: 100%;
     float: left;
@@ -456,9 +585,17 @@
     gap: 24px;
   }
 
-  @media (max-width: 992px) {
+  /* @media (max-width: 992px) {
     .vertical-line {
       display: none;
     }
-  }
+  } */
+  
+  /* .menu-1:hover {
+    background: #667085;
+    border-radius: 16px;
+    box-shadow: rgba(119, 59, 161, 0.5);
+    margin-left: 10px;
+    margin-right: 10px;
+  } */
 </style>
