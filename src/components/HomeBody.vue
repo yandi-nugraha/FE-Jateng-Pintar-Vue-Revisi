@@ -230,7 +230,7 @@
             </a>
             <a
               target="_blank"
-              href="http://radioaudisi.id/"
+              href="https://radio.jateng-pintar.teknoreka.com/"
               class="btn btn-primary rounded-pill d-flex flex-row justify-content-between align-items-center"
             >
               <img
@@ -257,7 +257,7 @@
             </a>
             <a
               target="_blank"
-              href="#"
+              href="https://sistem-permohonan.teknoreka.com/"
               class="btn btn-primary rounded-pill d-flex flex-row justify-content-between align-items-center"
             >
               <img class="img-logo-left" src="../assets/logo-jateng.svg" />
