@@ -19,6 +19,100 @@
       </div>
     </section>
 
+    <section class="carousel-article">
+      <swiper
+        :slidesPerView="1"
+        :spaceBetween="10"
+        :fade="true"
+        :loop="true"
+        :pagination="{
+          clickable: true,
+        }"
+        :navigation="true"
+        :breakpoints="{
+          '640': {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          '768': {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          '1024': {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+        }"
+        :modules="modules"
+        class="mySwiper"
+      >
+        <swiper-slide>
+          <div
+            class="card swiper-slide"
+            style="width: 30rem; border-radius: 24px"
+          >
+            <img
+              class="card-img-top"
+              src="../assets/office.png"
+              alt="Card image cap"
+              style="border-radius: 24px 24px 0px 0px"
+            />
+            <div class="card-body" style="border-radius: 0px 0px 24px 24px">
+              <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div
+            class="card swiper-slide"
+            style="width: 30rem; border-radius: 24px"
+          >
+            <img
+              class="card-img-top"
+              src="../assets/store.png"
+              alt="Card image cap"
+              style="border-radius: 24px 24px 0px 0px"
+            />
+            <div class="card-body" style="border-radius: 0px 0px 24px 24px">
+              <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div
+            class="card swiper-slide"
+            style="width: 30rem; border-radius: 24px"
+          >
+            <img
+              class="card-img-top"
+              src="../assets/office.png"
+              alt="Card image cap"
+              style="border-radius: 24px 24px 0px 0px"
+            />
+            <div class="card-body" style="border-radius: 0px 0px 24px 24px">
+              <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div
+            class="card swiper-slide"
+            style="width: 30rem; border-radius: 24px"
+          >
+            <img
+              class="card-img-top"
+              src="../assets/store.png"
+              alt="Card image cap"
+              style="border-radius: 24px 24px 0px 0px"
+            />
+            <div class="card-body" style="border-radius: 0px 0px 24px 24px">
+              <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
+            </div>
+          </div>
+        </swiper-slide>
+      </swiper>
+    </section>
+
     <section class="all-menu">
       <div class="container">
         <div class="card-menu">
@@ -177,128 +271,47 @@
         </div>
       </div>
     </section>
-
-    <section class="carousel-article">
-      <div class="slide-container swiper">
-        <div class="row">
-          <div class="col-lg-1">
-            <div class="swiper-button-next swiper-navBtn"></div>
-          </div>
-          <div class="col-lg-10">
-            <div class="slide-content">
-              <div class="card-wrapper swiper-wrapper">
-                <div class="card swiper-slide" style="width: 18rem">
-                  <img
-                    class="card-img-top"
-                    src="https://upload.wikimedia.org/wikipedia/commons/4/42/Shaqi_jrvej.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-                <div class="card swiper-slide" style="width: 18rem">
-                  <img
-                    class="card-img-top"
-                    src="https://upload.wikimedia.org/wikipedia/commons/4/42/Shaqi_jrvej.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-                <div class="card swiper-slide" style="width: 18rem">
-                  <img
-                    class="card-img-top"
-                    src="https://upload.wikimedia.org/wikipedia/commons/4/42/Shaqi_jrvej.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-                <div class="card swiper-slide" style="width: 18rem">
-                  <img
-                    class="card-img-top"
-                    src="https://upload.wikimedia.org/wikipedia/commons/4/42/Shaqi_jrvej.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-                <div class="card swiper-slide" style="width: 18rem">
-                  <img
-                    class="card-img-top"
-                    src="https://upload.wikimedia.org/wikipedia/commons/4/42/Shaqi_jrvej.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-1">
-            <div class="swiper-button-prev swiper-navBtn"></div>
-          </div>
-
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 
 <script>
-var swiper = new Swiper(".slide-content", {
-  slidesPerView: 3,
-  spaceBetween: 260,
-  loop: true,
-  centerSlide: "true",
-  fade: "true",
-  grabCursor: "true",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from "swiper/vue";
 
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    520: {
-      slidesPerView: 1,
-    },
-    950: {
-      slidesPerView: 2,
-    },
+// Import Swiper styles
+import "swiper/css";
+
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Pagination, Navigation } from "swiper/modules";
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
   },
-});
+  setup() {
+    return {
+      modules: [Pagination, Navigation],
+    };
+  },
+};
 </script>
 
 <style>
+.swiper-slide p {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.carousel-article .card-body {
+  background: radial-gradient(#e862b6, #784e96);
+}
+
 .text-section {
   color: white;
   margin-top: 102px;
