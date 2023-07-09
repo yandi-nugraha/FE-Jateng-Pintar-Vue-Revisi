@@ -353,206 +353,6 @@
             <h4>{{ pageTitle }} SD/MI/SDLB Lainnya</h4>
         </div>
 
-        <div class="row pb-5 mb-4">
-            <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
-                <!-- Card-->
-                <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" alt="" class="img-fluid d-block mb-3 img-top-radius">
-                    <div class="card-body">
-                        <h5>Mari Belajar Membaca</h5>
-                        <div class="table-responsive">
-                            <table class="table table-borderless">
-                                <tr>
-                                    <th class="px-0">Kontributor</th>
-                                    <td class="px-0">: Wisma Nantha</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Mapel</th>
-                                    <td class="px-0">: Bahasa Inggris</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Kelas</th>
-                                    <td class="px-0">: 4 Minggu</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tgl Upload</th>
-                                    <td class="px-0">: 17-11-2022 10:33:55</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tipe File</th>
-                                    <td class="px-0">: html | HTML5</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Jenis Media</th>
-                                    <td class="px-0">: Video Pembelajaran</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tag</th>
-                                    <td class="px-0">: -</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Penilaian</th>
-                                    <td class="px-0">
-                                        <ul class="list-inline small">
-                                            <li class="list-inline-item m-0">: </li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star"
-                                                    style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star"
-                                                    style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star"
-                                                    style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star"
-                                                    style="color: #eaecf0;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star"
-                                                    style="color: #eaecf0;"></i></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <hr class="solid">
-                        <router-link to="/detail-sumber-belajar" class="mr-2 mb-3 btn-edit text-light">
-                            <div class="btn-detail">
-                                <span class="btn-detail-teks">Lihat Sumber Belajar</span>
-                                <img src="../assets/arrow-up-right.svg" alt="">
-                            </div>
-                        </router-link>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
-                <!-- Card-->
-                <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" alt="" class="img-fluid d-block mb-3 img-top-radius">
-                    <div class="card-body">
-                        <h5>Mari Belajar Membaca</h5>
-                        <div class="table-responsive">
-                            <table class="table table-borderless">
-                                <tr>
-                                    <th class="px-0">Kontributor</th>
-                                    <td class="px-0">: Wisma Nantha</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Mapel</th>
-                                    <td class="px-0">: Bahasa Inggris</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Kelas</th>
-                                    <td class="px-0">: 4 Minggu</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tgl Upload</th>
-                                    <td class="px-0">: 17-11-2022 10:33:55</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tipe File</th>
-                                    <td class="px-0">: html | HTML5</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Jenis Media</th>
-                                    <td class="px-0">: Video Pembelajaran</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tag</th>
-                                    <td class="px-0">: -</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Penilaian</th>
-                                    <td class="px-0">
-                                        <ul class="list-inline small">
-                                            <li class="list-inline-item m-0">: </li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star"
-                                                    style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star"
-                                                    style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star"
-                                                    style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star"
-                                                    style="color: #eaecf0;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star"
-                                                    style="color: #eaecf0;"></i></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <hr class="solid">
-                        <router-link to="/detail-sumber-belajar" class="mr-2 mb-3 btn-edit text-light">
-                            <div class="btn-detail">
-                                <span class="btn-detail-teks">Lihat Sumber Belajar</span>
-                                <img src="../assets/arrow-up-right.svg" alt="">
-                            </div>
-                        </router-link>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
-                <!-- Card-->
-                <div class="card rounded-card shadow border-0">
-                    <img src="../assets/Image.svg" alt="" class="img-fluid d-block mb-3 img-top-radius">
-                    <div class="card-body">
-                        <h5>Mari Belajar Membaca</h5>
-                        <div class="table-responsive">
-                            <table class="table table-borderless">
-                                <tr>
-                                    <th class="px-0">Kontributor</th>
-                                    <td class="px-0">: Wisma Nantha</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Mapel</th>
-                                    <td class="px-0">: Bahasa Inggris</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Kelas</th>
-                                    <td class="px-0">: 4 Minggu</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tgl Upload</th>
-                                    <td class="px-0">: 17-11-2022 10:33:55</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tipe File</th>
-                                    <td class="px-0">: html | HTML5</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Jenis Media</th>
-                                    <td class="px-0">: Video Pembelajaran</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Tag</th>
-                                    <td class="px-0">: -</td>
-                                </tr>
-                                <tr>
-                                    <th class="px-0">Penilaian</th>
-                                    <td class="px-0">
-                                        <ul class="list-inline small">
-                                            <li class="list-inline-item m-0">: </li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star"
-                                                    style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star"
-                                                    style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star"
-                                                    style="color: #fdb022;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star"
-                                                    style="color: #eaecf0;"></i></li>
-                                            <li class="list-inline-item m-0"><i class="fa-solid fa-star"
-                                                    style="color: #eaecf0;"></i></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <hr class="solid">
-                        <router-link to="/detail-sumber-belajar" class="mr-2 mb-3 btn-edit text-light">
-                            <div class="btn-detail">
-                                <span class="btn-detail-teks">Lihat {{ pageTitle }}</span>
-                                <img src="../assets/arrow-up-right.svg" alt="">
-                            </div>
-                        </router-link>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- <nav aria-label="Page navigation" class="mb-5">
             <ul class="pagination justify-content-center">
                 <li class="page-item disabled">
@@ -574,9 +374,113 @@
         </nav> -->
 
         <!-- Button Carousel -->
-        <button class="carousel-btn"><i class="bi bi-arrow-left-short fs-2"></i></button>
-        <button class="carousel-btn"><i class="bi bi-arrow-right-short text-white fs-2"></i></button>
+        <!-- <button class="carousel-btn"><i class="bi bi-arrow-left-short fs-2"></i></button> -->
+        <!-- <button class="carousel-btn"><i class="bi bi-arrow-right-short text-white fs-2"></i></button> -->
         <!-- CSS di bawah -->
+
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <button class="carousel-btn"><i class="bi bi-arrow-left-short fs-2"></i></button>
+            </div>
+
+            <div class="col">
+                <router-link to="/detail-sumber-belajar" class="card-link">
+                    <div class="card rounded-card shadow border-0">
+                        <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
+                        <div class="card-body">
+                            <p class="card-label">Bahasa Inggris</p>
+                            <p class="card-desc">Kelas XII MIPA • File: Video (mp4)</p>
+                            <h5 class="card-title">Mari Belajar Membaca</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card-rating me-1 px-2" style="margin-bottom: 0px !important;">Membaca</p>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                            </div>
+                            <hr class="inner-card-line">
+                            <div class="d-flex flex-row align-items-center py-2">
+                                <div>
+                                    <img src="../assets/profile.svg"
+                                        style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                                </div>
+                                <div class="name ms-3">
+                                    <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </router-link>
+            </div>
+
+            <div class="col">
+                <router-link to="/detail-sumber-belajar" class="card-link">
+                    <div class="card rounded-card shadow border-0">
+                        <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
+                        <div class="card-body">
+                            <p class="card-label">Bahasa Inggris</p>
+                            <p class="card-desc">Kelas XII MIPA • File: Video (mp4)</p>
+                            <h5 class="card-title">Mari Belajar Membaca</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card-rating me-1 px-2" style="margin-bottom: 0px !important;">Membaca</p>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                            </div>
+                            <hr class="inner-card-line">
+                            <div class="d-flex flex-row align-items-center py-2">
+                                <div>
+                                    <img src="../assets/profile.svg"
+                                        style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                                </div>
+                                <div class="name ms-3">
+                                    <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </router-link>
+            </div>
+
+            <div class="col">
+                <router-link to="/detail-sumber-belajar" class="card-link">
+                    <div class="card rounded-card shadow border-0">
+                        <img src="../assets/Image.svg" class="img-fluid d-block mb-3 img-top-radius" alt="...">
+                        <div class="card-body">
+                            <p class="card-label">Bahasa Inggris</p>
+                            <p class="card-desc">Kelas XII MIPA • File: Video (mp4)</p>
+                            <h5 class="card-title">Mari Belajar Membaca</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card-rating me-1 px-2" style="margin-bottom: 0px !important;">Membaca</p>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #fdb022;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa-solid fa-star" style="color: #eaecf0;"></i></li>
+                            </div>
+                            <hr class="inner-card-line">
+                            <div class="d-flex flex-row align-items-center py-2">
+                                <div>
+                                    <img src="../assets/profile.svg"
+                                        style="box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); border-radius: 50%; max-width: 50px; max-height: 50px;">
+                                </div>
+                                <div class="name ms-3">
+                                    <h3 style="margin-bottom: 0px !important; font-size: 14px; font-weight: 600;">Wisma Nantha</h3>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </router-link>
+            </div>
+
+            <div class="col-auto">
+                <button class="carousel-btn"><i class="bi bi-arrow-right-short text-white fs-2"></i></button>
+            </div>
+        </div>
+        
 
     </div>
 </template>
@@ -889,5 +793,54 @@
         padding: 8px 20px;
         font-weight: bold;
         color: #344054;
+    }
+
+    
+    .rounded-card {
+        border-radius: 20px !important;
+    }
+
+    .img-top-radius {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .card-label {
+        color: var(--primary-700, #6941C6);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .card-desc {
+        color: var(--gray-700, #344054);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .card-title {
+        color: var(--gray-900, #101828) !important;
+        font-size: 24px !important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+    }
+
+    .card-rating {
+        border-radius: 16px;
+        background: var(--primary-50, #F9F5FF);
+        color: var(--primary-700, #6941C6);
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    .card-link {
+        text-decoration: none;
+    }
+
+    .inner-card-line {
+        background: var(--gray-200, #EAECF0);
     }
 </style>
