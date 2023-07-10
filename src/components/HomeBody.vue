@@ -20,97 +20,99 @@
     </section>
 
     <section class="carousel-article">
-      <swiper
-        :slidesPerView="1"
-        :spaceBetween="10"
-        :fade="true"
-        :loop="true"
-        :pagination="{
-          clickable: true,
-        }"
-        :navigation="true"
-        :breakpoints="{
-          '640': {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          '768': {
-            slidesPerView: 1,
-            spaceBetween: 40,
-          },
-          '1024': {
-            slidesPerView: 2,
-            spaceBetween: 50,
-          },
-        }"
-        :modules="modules"
-        class="mySwiper"
-      >
-        <swiper-slide>
-          <div
-            class="card swiper-slide"
-            style="width: 30rem; border-radius: 24px"
-          >
-            <img
-              class="card-img-top"
-              src="../assets/office.png"
-              alt="Card image cap"
-              style="border-radius: 24px 24px 0px 0px"
-            />
-            <div class="card-body" style="border-radius: 0px 0px 24px 24px">
-              <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
+      <div class="container">
+        <swiper
+          :slidesPerView="1"
+          :spaceBetween="10"
+          :fade="true"
+          :loop="true"
+          :pagination="{
+            clickable: true,
+          }"
+          :navigation="true"
+          :breakpoints="{
+            '640': {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            '768': {
+              slidesPerView: 1,
+              spaceBetween: 40,
+            },
+            '1024': {
+              slidesPerView: 2,
+              spaceBetween: 50,
+            },
+          }"
+          :modules="modules"
+          class="mySwiper"
+        >
+          <swiper-slide>
+            <div
+              class="card swiper-slide"
+              style="width: 30rem; border-radius: 24px"
+            >
+              <img
+                class="card-img-top"
+                src="../assets/office.png"
+                alt="Card image cap"
+                style="border-radius: 24px 24px 0px 0px"
+              />
+              <div class="card-body" style="border-radius: 0px 0px 24px 24px">
+                <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
+              </div>
             </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div
-            class="card swiper-slide"
-            style="width: 30rem; border-radius: 24px"
-          >
-            <img
-              class="card-img-top"
-              src="../assets/store.png"
-              alt="Card image cap"
-              style="border-radius: 24px 24px 0px 0px"
-            />
-            <div class="card-body" style="border-radius: 0px 0px 24px 24px">
-              <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="card swiper-slide"
+              style="width: 30rem; border-radius: 24px"
+            >
+              <img
+                class="card-img-top"
+                src="../assets/store.png"
+                alt="Card image cap"
+                style="border-radius: 24px 24px 0px 0px"
+              />
+              <div class="card-body" style="border-radius: 0px 0px 24px 24px">
+                <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
+              </div>
             </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div
-            class="card swiper-slide"
-            style="width: 30rem; border-radius: 24px"
-          >
-            <img
-              class="card-img-top"
-              src="../assets/office.png"
-              alt="Card image cap"
-              style="border-radius: 24px 24px 0px 0px"
-            />
-            <div class="card-body" style="border-radius: 0px 0px 24px 24px">
-              <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="card swiper-slide"
+              style="width: 30rem; border-radius: 24px"
+            >
+              <img
+                class="card-img-top"
+                src="../assets/office.png"
+                alt="Card image cap"
+                style="border-radius: 24px 24px 0px 0px"
+              />
+              <div class="card-body" style="border-radius: 0px 0px 24px 24px">
+                <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
+              </div>
             </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div
-            class="card swiper-slide"
-            style="width: 30rem; border-radius: 24px"
-          >
-            <img
-              class="card-img-top"
-              src="../assets/store.png"
-              alt="Card image cap"
-              style="border-radius: 24px 24px 0px 0px"
-            />
-            <div class="card-body" style="border-radius: 0px 0px 24px 24px">
-              <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="card swiper-slide"
+              style="width: 30rem; border-radius: 24px"
+            >
+              <img
+                class="card-img-top"
+                src="../assets/store.png"
+                alt="Card image cap"
+                style="border-radius: 24px 24px 0px 0px"
+              />
+              <div class="card-body" style="border-radius: 0px 0px 24px 24px">
+                <p class="card-text">Proses Komunikasi Data Dalam Jaringan</p>
+              </div>
             </div>
-          </div>
-        </swiper-slide>
-      </swiper>
+          </swiper-slide>
+        </swiper>
+      </div>
     </section>
 
     <section class="all-menu">
@@ -258,7 +260,7 @@
             </a>
             <a
               target="_blank"
-              href="https://sistem-permohonan.teknoreka.com/"
+              href="https://wahana.jateng-pintar.teknoreka.com/"
               class="btn btn-primary rounded-pill d-flex flex-row justify-content-between align-items-center"
             >
               <img class="img-logo-left" src="../assets/logo-jateng.svg" />
