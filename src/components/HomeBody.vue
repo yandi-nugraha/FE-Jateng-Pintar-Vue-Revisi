@@ -126,7 +126,7 @@
             </p>
           </div>
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
               <div class="vertical-line me-2" style="height: 300px"></div>
               <div class="d-flex flex-column">
                 <img src="../assets/Sumber-Belajar_Normal.svg" alt="..." />
@@ -140,13 +140,13 @@
                 </div>
                 <router-link
                   to="/sumber-belajar"
-                  class="btn btn-primary rounded-pill mt-2"
+                  class="content-btn mt-3"
                 >
                   Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
                 </router-link>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
               <div class="vertical-line me-2" style="height: 300px"></div>
               <div class="d-flex flex-column">
                 <img src="../assets/Karya_Siswa_Normal.svg" alt="..." />
@@ -156,13 +156,13 @@
                 </div>
                 <router-link
                   to="/sumber-belajar"
-                  class="btn btn-primary rounded-pill mt-2"
+                  class="content-btn mt-3"
                 >
                   Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
                 </router-link>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
               <div class="vertical-line me-2" style="height: 300px"></div>
               <div class="d-flex flex-column">
                 <img src="../assets/Siswa_jateng_Pintar_Normal.svg" alt="..." />
@@ -172,13 +172,13 @@
                 </div>
                 <router-link
                   to="/sumber-belajar"
-                  class="btn btn-primary rounded-pill mt-2"
+                  class="content-btn mt-3"
                 >
                   Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
                 </router-link>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
               <div class="vertical-line me-2" style="height: 300px"></div>
               <div class="d-flex flex-column">
                 <img src="../assets/Kontributor_Normal.svg" alt="..." />
@@ -188,7 +188,7 @@
                 </div>
                 <router-link
                   to="/sumber-belajar"
-                  class="btn btn-primary rounded-pill mt-2"
+                  class="content-btn mt-3"
                 >
                   Lihat Selengkapnya<i class="bi bi-chevron-right"></i>
                 </router-link>
@@ -569,7 +569,7 @@ export default {
   flex-direction: column;
   align-items: flex-start;
   gap: 14px;
-  flex: 1 0 0;
+  flex: 0.5 0 0;
 }
 
 .enable-card {
@@ -578,6 +578,14 @@ export default {
   justify-content: center;
   align-items: flex-end;
   gap: 24px;
+}
+
+.content-btn {
+  color: #2F2E41;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none !important;
 }
 
 @media (max-width: 992px) {
